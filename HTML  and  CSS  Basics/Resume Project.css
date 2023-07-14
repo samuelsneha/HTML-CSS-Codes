@@ -1,0 +1,733 @@
+body{
+	margin: 0px;
+}
+/* BODY - HEADER  */
+#body-header{
+	background-image: url("Macbook Mouse BG Image.jpg");
+	height: 80vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+}
+
+/*HEADER - NAVIGATION LIST*/
+#body-header #navigation-list{
+	 display: flex;
+	 /*margin-top: 30px;*/
+	 padding-top:10px;
+	 margin-left: 150px;
+	 justify-content: space-between;
+	/* if u remove this then by default property ie. block will be there and u will get default margins and to avoid them u will have to manually do separate margin-top:0 since its block.
+	for now since its inline block, it will adjust automatically. */
+}
+#body-header #hamburger-icon{
+	display: none;
+}
+
+#body-header #navigation-list li{
+	display: inline-block;
+
+}
+#body-header #navigation-list a{
+	text-decoration: none;
+	color: white;
+	margin-right: 35px;
+	margin-left: 40px;
+    font-size: 19px;
+    /*transition: color 0.5s, border-bottom 2s;*/
+    transition: 0.5s ease-in-out;
+}
+ /*.navigation-list-anchor:hover{*/
+ /*color: lightgray !important;*/
+#body-header #navigation-list a:hover{
+    color: lightgray;    
+    border-bottom: 1px white solid;
+    /*box-shadow: inset 20px 5px 5px 5px pink;*/
+}
+/* HEADER NAME - DIV */
+
+#header-name{
+	display: block;
+	font-family: serif;
+	font-weight: bolder;
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	margin-top: 130px;
+	margin-left: 70px;
+	margin-right: 80px;
+	margin-bottom: 30px;
+}
+/* HEADER - SOCIAL LINKS LIST */
+
+.textcenter{
+	text-align: center;
+	margin-left: -60px;
+	display: block;
+}
+#body-header #social-link-list li{
+    display: inline-block;
+    color: white;
+    margin-top: -20px;
+}
+#body-header #social-link-list img{
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 30%;
+}
+/*UNDERSTAND THIS BELOW CSS PROPERTY, WHY WE ARE DOING IT*/
+#social-link-list a img:hover{
+    box-shadow: 0px 0px 6px 6px rgba(230,196,196,0.3);
+}
+/* MY IMAGE */
+
+#myimage img{
+    height: 35%;
+    width: 20%;
+    min-height: 230px;
+    min-width: 50px;
+    position: relative;
+    bottom: 17vh;
+    left: 40%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px 3px lightgrey;
+    /*box-shadow: inset 20px 5px 5px 5px pink; This will work only in text. The inner shadow wont be visible in image, the image overlaps it. If you want it to be visible in image use a parent div/ margin and give the box shadow property to that parent div/margin. Else image will overlap the shadow.*/
+    display: block;
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+
+/*ABOUT SECTION*/
+
+#about_div{
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: -110px;
+}
+.highlight{
+	color: #2857a4;
+}
+#about_section p{
+    margin-bottom: 100px;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 550;
+    word-spacing: 3px;  
+    line-height: 1.5;
+    text-align: justify;
+}
+#about_section{
+	display: flex;
+	flex-direction: column;
+}
+
+/*SKILLS SCETION*/
+
+#skills-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+	align-items: center;
+}
+#skills-header{
+	margin-top: 2%;
+	/*flex-direction: row; Because row is default value. Only if you want it to be column then write flex-direction. Same reason why I have commented flex-direction: row in future places also.*/
+	display: flex;
+	justify-content: center;
+}
+#skills-header i{
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    color:#2857a4;
+}
+#skills-header h2{
+	font-family: monospace;
+	color: #2857a4;
+	font-size: 1.8rem;
+	margin-top: 1.2rem;
+	margin-left: 1rem;
+}
+#skills-content{
+	display: flex;
+	margin-top: 8%;
+	margin-bottom: 5%;
+	justify-content: space-around;
+	/*align-items: center; Commented coz align-items and justify-content inheritsfrom its parents. Same reason why I have commented them in the future.*/
+	/*flex-direction: row;*/
+	flex-wrap: wrap;
+	margin-left: 17%;
+	margin-right: 17%;
+} 
+#skills-content>div{
+	display: flex;
+	height: 2rem;
+	width: 10rem;
+	border-radius: 20px;
+	background-color: lightgray;
+	/*justify-content: space-between;*/
+	margin: 1.3rem;
+	box-shadow: inset 0px 2px 5px 1px #c3bbbb;
+}
+#inner-div1{
+    width: 70%;
+	background-color: orange;
+}
+#inner-div2{
+    width: 40%;
+	background-color: darkmagenta;
+}
+#inner-div3{
+    width: 60%;
+	background-color: gold;
+}
+#inner-div4{
+    width: 50%;
+	background-color: green;
+}
+#inner-div5{
+    width: 40%;
+	background-color: deeppink;
+}
+#inner-div6{
+    width: 80%;
+	background-color: chocolate;
+}
+#inner-div7{
+    width: 80%;
+	background-color: darkblue;
+}
+#inner-div8{
+    width: 90%;
+	background-color: darkviolet;
+}
+.skills-content-innerclass{
+	height: inherit;
+	border-radius: 20px 0px 0px 20px;
+	box-shadow:  4px 0px 4px 0px #c3bbbb;
+}
+#skills-content span{
+	position: relative;
+    top: 0.4rem;
+    left: 1.3rem;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}	
+
+/* WORK-EXPERIENCE SECTION */
+
+#work-experience{
+	height: 185vh;
+	width: 100%;
+	/*border: 2px solid pink ;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+#work-experience-heading{
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*border: 2px solid pink;*/
+    justify-content: center;
+    align-items: center;
+}
+#work-experience-heading i{
+	font-size: 2.5rem;
+	margin-right: 0.7rem;
+	color:#2857a4;
+}
+#work-experience-heading h2{
+	font-size: 2.5rem;
+	margin-left: 0.6rem;
+	color:#2857a4;
+	font-family: sans-serif;
+}
+#work-experience-content{
+	/*border: 2px solid pink;*/
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    height: 130vh;
+    padding: 3rem;
+    position: relative;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+}
+.work-experience-boxes{
+	height: 10rem;
+	width: 25rem;
+	/*border: 1px solid black;*/
+	margin-bottom: 4rem;
+	position: relative;
+	top: 0rem;
+}
+.work-experience-boxes:nth-child(2n+1){
+/* it means all odd children of work-experience-content should be placed towards the right */
+    position: relative;
+    left: 55%;
+} 
+#work-experience-divider{
+	/* this is like the runway */
+	border: 2px dashed lightblue;
+	height: 45rem;
+	width: 0rem;
+	position: absolute;
+	left: 49.3%;
+	top: 10%;
+	/*https://stackoverflow.com/questions/9191803/why-does-z-index-not-work- REFER TO THIS*.
+	PARENT WILL GET Z-INDEX 0 AUTOMATICALLY. SO DONT MENTION. /
+	/*z-index: 1;*/
+}
+#plane-icon{
+	/* now o top of the */
+	font-size: 1.5rem;
+	position: sticky;
+	top: 30rem;
+	left: 20rem;
+	transform: rotate(90deg);
+	color:#2857a4;
+	z-index: 3;
+}
+
+/*#work-experience-divider #dotted-border{
+	border: 2px dashed lightblue;
+	height: 45rem;
+	width: 0rem;
+	position: absolute;
+	left: 49.3%;
+	top: 10%;
+	z-index: 1;
+}*/
+.work-experience-boxes:nth-child(2n)::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    right: -16.3%;
+    top: 30%;
+    z-index: 2;
+}
+.work-experience-boxes:nth-child(2n+1)::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    left: -14.5%;
+    top: 30%;
+    z-index: 2;
+}
+#part-1{
+	margin-bottom: 2rem;
+	text-align: right;
+	justify-content: end;
+}
+.part-1::before{
+	content: '';
+    height: 60px;
+    width: 60px;
+    border-radius: 25%;
+    position: absolute;
+    right:85%;
+    top: 12%;
+    display: inline-block;
+    font-size: 1.5rem;
+    background-image: url("Image 2.png");
+    background-size: contain;
+}
+/*.designation{
+	position: absolute;
+	left: 17rem;
+}*/
+/*.company-name{
+	position: absolute;
+	bottom: 4rem;
+	right: 0.5rem;
+}*/
+/*.month-year{
+	position: absolute;
+	bottom: 2.8rem;
+	right: 0.5rem;
+}*/
+.part-2 p{
+	position: absolute;
+	top: 5.5rem;
+	color: gray;
+	right: 0.5rem;
+	text-align: justify;
+	font-family: sans-serif;
+	font-size: 0.95rem;
+}
+.designation{
+    color:#2857a4;
+    position: absolute;
+	left: 17rem;
+}
+.company-name{
+	color: orange;
+	font-family: sans-serif;
+	margin-top: -1rem;
+	position: absolute;
+	bottom: 4rem;
+	right: 0.5rem;
+}
+.month-year{
+	margin-top: -1rem;
+	color: lightslategray;
+	font-family: sans-serif;
+	position: absolute;
+	bottom: 2.8rem;
+	right: 0.5rem;
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+}
+#portfolio-heading{
+	display: flex;
+	flex-direction: row;
+	margin-top: 3rem;
+}
+#portfolio-heading i{
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    color:#2857a4;
+}
+#portfolio-heading h2{
+    color: #2857a4;
+    font-family: sans-serif;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+}
+#portfolio-content{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 5px 30px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	justify-content: space-around;
+	/*box-sizing: border-box;*/
+}
+#portfolio-content>div{
+    display:flex;
+    flex-wrap:wrap;
+    /*flex-direction:row;*/
+    justify-content:space-between;
+    max-width:300px;
+    overflow: hidden;
+    margin: 20px;
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    position: relative; 
+    /* Because you have given its child absoluete, so parent should be relative.*/
+}
+#portfolio img{
+    height:100%;
+    width:100%;
+}
+.bg-hover:hover{
+    box-shadow: 0px 0px 10px 3px lightblue;
+    background-color:lightgrey;  
+}
+.hover-text{ 
+   color:transparent; 
+   font-size:2rem;
+   position:absolute;
+   /*top: 0px;*/
+   /*left: 0px;*/
+   text-align:center; 
+   padding:10px;
+ } 
+.bg-hover:hover .hover-text{
+ /* This property means, whenever i will hover on the bg-hover element, I want the hover-text element to change its color to white. */
+  /* This is the correct syntax to point out the hover-text element wrt bg-hover element  */
+    color:white;
+}
+
+/* CONTACT SECTION */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; 
+    background: linear-gradient(to bottom left,#403066 35%,#2857a4);
+    min-height: 100vh;
+    width: 100%;
+    /*padding-bottom: 100px;*/
+}
+#contact-heading{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8%;
+}
+#contact-heading i{
+	font-size: 2.5rem;
+    margin-right: 1rem;
+    color: white;
+} 
+#contact-heading h2{
+	margin-left: 0.5rem;
+	font-size: 2.4rem;
+	color: white;
+	font-family: sans-serif;
+}
+#contact-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; 
+}
+#contact-content-left-side{
+	/*border: 2px white dotted;*/
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: -10rem;
+    margin-left: 3rem;
+    margin-right: -4rem;
+    position: relative;
+}
+#contact-content-right-side{
+	/*border: 2px white dotted;*/
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 35%;
+	margin-top: -1rem;
+    margin-left: -5rem;
+}
+/* LEFT-CONTENT */
+
+#contact-content-left-side form {
+	width: 31rem;
+}
+#contact-content-left-side textarea {
+	width: 25rem;
+}
+input, textarea{
+	background-color: transparent;
+	border: none;
+}
+.class1{
+	margin-bottom: 2.5rem;
+}
+input{
+	font-size: 1rem;
+	margin-left: 0.7rem;
+}
+/*textarea,hr{
+	border-bottom: 2px solid white;
+	 This above one is a good logic which you implemented by yourself and got the right output . And before this you planned first to put no borders and then only border bottom. So great idea. 
+}*/
+.demo{
+	width: 81%;
+}
+
+#textdemo{
+	width: 81%;
+}
+#message{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+#send-message-form{
+	position: absolute;
+	top: 15rem;
+	left: 10rem;
+    height: 1.8rem;
+    width: 10rem !important;
+    border: 2px solid white; 
+    padding-top: 0.5rem; 
+}
+#send-message{
+	color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* RIGHT-CONTENT */
+
+#get-in-touch{
+	margin-top: -6rem;
+}
+#contact-content-right-side p{
+    margin-top: -0.1rem;
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+.class3{
+	color: white;
+	font-family: sans-serif;
+}
+#my-address{
+	margin-top: 0.5rem;
+}
+.class4{
+  font-family: sans-serif;
+  color: lightgray;
+  margin-bottom: 1.5rem;
+}
+#contact-content-right-side i{
+	color: white;
+	margin-right: 0.5rem;
+}
+
+/* CONTACT SESSION-SOCIAL LINK LIST */
+
+#contact-section-social-link-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 2rem;
+}
+#contact-section-social-link-list i{
+	margin-top: 2rem;
+	margin-right: 3.5rem;
+	margin-bottom: 3rem;
+	font-size: 1.2rem;
+    color: white;
+}
+/*In short, the opening and closing tags for the <textarea> element must be on the same line, otherwise a newline character occupies it. The placeholder will therefore not be displayed since the input area contains content (a newline character is, technically, valid content)*/
+/* transition duration, transition-timimg-function, transition-delay */
+
+/* Media Queries FOR 768 PX */
+@media only screen and (max-width: 768px){
+/* BODY - HEADER  */
+
+#body-header{
+	height: 70vh;
+}
+/*HEADER - NAVIGATION LIST*/
+#body-header #navigation-list{
+	 display: flex;
+	 margin-left: 0px;
+	 justify-content: space-between;
+	/* if u remove this then by default property ie. block will be there and u will get default margins and to avoid them u will have to manually do separate margin-top:0 since its block.
+	for now since its inline block, it will adjust automatically. */
+}
+#navigation-list #portfolio-list{
+	margin-left: 14rem;
+	margin-top: 1rem;
+}
+#body-header #navigation-list li{
+	display: inline-block;
+}
+#body-header #navigation-list a{
+	text-decoration: none;
+	color: white;
+	margin-right: 35px;
+	margin-left: 40px;
+    font-size: 19px;
+    /*transition: color 0.5s, border-bottom 2s;*/
+    transition: 0.5s ease-in-out;
+}
+ /*.navigation-list-anchor:hover{*/
+ /*color: lightgray !important;*/
+#body-header #navigation-list a:hover{
+    color: lightgray;    
+    border-bottom: 1px white solid;
+    /*box-shadow: inset 20px 5px 5px 5px pink;*/
+}
+/* HEADER NAME - DIV */
+
+#header-name{
+	display: block;
+	font-family: serif;
+	font-weight: bolder;
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	margin-top: 130px;
+	margin-left: 70px;
+	margin-right: 80px;
+	margin-bottom: 30px;
+}
+/* HEADER - SOCIAL LINKS LIST */
+
+.textcenter{
+	text-align: center;
+	margin-left: -60px;
+	display: block;
+}
+#body-header #social-link-list li{
+    display: inline-block;
+    color: white;
+    margin-top: -20px;
+}
+#body-header #social-link-list img{
+	height: 20px;
+	width: 20px;
+	margin-left: 5px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 30%;
+}
+/*UNDERSTAND THIS BELOW CSS PROPERTY, WHY WE ARE DOING IT*/
+#social-link-list a img:hover{
+    box-shadow: 0px 0px 6px 6px rgba(230,196,196,0.3);
+}
+/* MY IMAGE */
+
+#myimage img{
+    height: 35%;
+    width: 20%;
+    min-height: 230px;
+    min-width: 50px;
+    position: relative;
+    bottom: 17vh;
+    left: 40%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 5px 3px lightgrey;
+    /*box-shadow: inset 20px 5px 5px 5px pink; This will work only in text. The inner shadow wont be visible in image, the image overlaps it. If you want it to be visible in image use a parent div/ margin and give the box shadow property to that parent div/margin. Else image will overlap the shadow.*/
+    display: block;
+}
+section:nth-child(2n){
+	background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+}
+
+
+
+
+
+

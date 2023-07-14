@@ -1,0 +1,236 @@
+#container1{
+	display: flex;
+	height: auto;
+	width: 45vw;
+	background-color: pink;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#div1{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}    
+#div2{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div3{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div4{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container2{
+	display: flex;
+	height: auto;
+	width: 45vw;
+	background-color: pink;
+	flex-wrap: wrap-reverse;
+}
+
+#div5{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div6{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div7{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div8{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container3{
+	display: flex;
+	height: auto;
+	width: 45vw;
+	flex-direction: row-reverse;
+	background-color: pink;
+	flex-wrap: wrap;
+}
+
+#div9{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div10{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div11{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div12{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container4{
+	display: flex;
+	height: auto;
+	width: 45vw;
+	flex-direction: row-reverse;
+	background-color: pink;
+	flex-wrap: wrap-reverse;
+}
+
+#div13{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div14{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div15{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div16{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container5{
+	display: flex;
+	height: 65vh;
+	width: auto;
+	flex-direction: column;
+	background-color: pink;
+}
+#div17{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div18{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div19{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div20{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container6{
+	display: flex;
+	height: 65vh;
+	width: auto;
+	flex-direction: column;
+	background-color: pink;
+	flex-wrap: wrap;
+}
+#div21{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div22{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div23{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div24{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+#container7{
+	display: flex;
+	height: 65vh;
+	width: auto;
+	flex-direction: column;
+	background-color: pink;
+	flex-wrap: wrap-reverse;
+}
+#div25{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div26{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div27{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div28{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+#container8{
+	display: flex;
+	height: 65vh;
+	width: auto;
+	flex-direction:column-reverse;
+	background-color: pink;
+	flex-wrap: wrap-reverse;
+}
+#div29{
+	height: 200px;
+	width: 200px;
+    background-color: gold;
+}
+#div30{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+}
+#div31{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+}
+#div32{
+	height: 200px;
+	width: 200px;
+	background-color: lavender;
+}
+
+
+
+
+

@@ -1,0 +1,164 @@
+#container1{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+	align-items: flex-start;
+}
+#div1{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+}    
+#div2{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+#div3{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+} 
+#container2{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+	flex-direction: row;
+    align-items: flex-end;
+}
+#div4{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+}    
+#div5{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+#div6{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+} 
+#container2{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+    align-items: flex-end;
+}
+#div4{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+}    
+#div5{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+#div6{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+} 
+#container3{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+    align-items: center;
+}
+#div7{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+}    
+#div8{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+#div9{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+} 
+#container4{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+    align-items: stretch;
+    /*max-height: 300px;*/
+}
+#div10{
+	height: auto;
+	width: 100px;
+    background-color: gold;
+    max-height: 300px;
+}    
+#div11{
+	height: auto;
+	width: 100px;
+	background-color: blue;
+	max-height: 500px;
+}
+#div12{
+	height: auto;
+	width: 100px;
+    background-color: cyan;
+    max-height: 400px;
+} 
+#container5{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+	align-items: baseline;
+}
+#div13{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+    margin: 20px;
+}    
+#div14{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+	margin: 30px;
+}
+#div15{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+    margin: 40px;
+} 
+
+#container6{
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: pink;
+	align-items: center;
+	justify-content: center;
+}
+#div16{
+	height: 100px;
+	width: 100px;
+    background-color: gold;
+}    
+#div17{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
+#div18{
+	height: 100px;
+	width: 100px;
+    background-color: cyan;
+} 

@@ -1,0 +1,60 @@
+#first-letter::first-letter{
+    font-size: 2rem;
+    color: red;
+    text-transform: capitalize;
+}
+#first-sentence::first-line{
+    font-size: 2rem;
+    color: red;
+    text-transform: capitalize;
+}
+#before{
+	background-color: gold;
+}
+#before::before{
+	content: 'before';
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*background-color: gold;*/
+/*see the difference  between putting bg color gold in #before::before and #before. You will realize that this #before::before is only for 'before' content styling and if you want to style the element p in general then you will have to use #before. */
+}
+#after{
+	background-color: lightblue;
+}
+#after::after{
+	content: 'after';
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	/*background-color: gold;*/
+/*see the difference  between putting bg color gold in #after::after and #after. You will realize that this #after::after is only for 'after' content styling and if you want to style the element p in general then you will have to use #after. */
+}
+#quotes-before::before{
+	content: '"';
+}
+#quotes-after::after{
+	content: '"';
+}
+#icon-after::after{
+    content: ' ';
+    font-size: 1.5rem;
+    background-image: url("Image 2.png");
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    font-weight: bold;
+}
+/*You can try the above same thing using 'before' also*/
+/*li::before{*/
+.icon-before::before{	
+	content: ' ';
+    font-size: 1.5rem;
+    background-image: url("Image 2.png");
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+#tohover:hover{
+	color: orange;
+}
+
+/*Grouping different types of selectors ie. classes, ids and types */
+.class1,.class2, #id1,article{
+	border-style: dotted;
+}
+
+/*Grouping different class selectors together*/
+.class3,.class4{
+	font-family: cursive;
+}
+
+/*Grouping different id selectors together*/
+#id1,#id2{
+	background-color: gold;
+}
+
+/*Grouping different type selectors together*/
+article,h1{
+	color: skyblue;
+}
+
+/*Nesting of type and type selectors */
+p + h5{
+	background-color: green;
+}
+
+/*Nesting of id and id selectors */
+#id5 #id6{
+	border-style: dashed;
+}
+
+/*Nesting of class and class selectors */
+.class7 .class8{
+	border-style: double;
+}
+
+/*Nesting of id and type selectors */
+#id3 p{
+	background-color: brown;
+}
+
+/*Nesting of class and type selectors */
+.class5 p{
+	background-color:pink ;
+}
+
+/*Nesting of id and class selectors. It doesnt matter whther you write id first or class first. Just make sure that div is the parent. */
+.class6 #id4{
+	background-color:orange;
+}

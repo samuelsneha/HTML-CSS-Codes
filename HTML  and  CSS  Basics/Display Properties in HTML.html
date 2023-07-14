@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> Display Properties in HTML </TITLE>
+ <link rel="shortcut icon" type="image/png" href="Favicon 1.png">
+ <style type="text/css">
+
+  #id1{
+       height: 300px;
+       width: 300px;
+       background-color: darkred;
+       border: 3px solid greenyellow;
+       display: inline;
+  }
+  #id2{
+  	   display: inline;
+       height: 300px;
+       width: 300px;
+       background-color: hotpink;
+       border: 3px solid orchid;
+  }
+  #id3{
+       height: 300px;
+       width: 300px;
+       background-color: darkred;
+       border: 3px solid greenyellow;
+       display: inline-block;
+  }
+  #id4{
+  	   display: inline-block;
+       height: 300px;
+       width: 300px;
+       background-color: hotpink;
+       border: 3px solid orchid;
+       margin-left: -4px;
+       /*This negative margin is used to remove the default space which inline-block produces*/
+  }
+  .class1{
+  	   display: block;
+  }
+
+ </style>
+</head>
+<body>
+ <div id="id1">
+ </div>
+
+ <div id="id2">
+ </div>
+
+ <div id="id3">
+ </div>
+
+ <div id="id4">
+ </div>
+
+ <span class="class1"> This is  span1 </span>
+ <span class="class1"> This is span2 </span>
+</body>
+</html>

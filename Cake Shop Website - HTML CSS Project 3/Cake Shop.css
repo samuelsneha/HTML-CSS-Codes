@@ -1,0 +1,1313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* navigation */
+.navigation{
+    /* border: 1px solid black; */
+    height: 6rem;
+    /* padding: 6px; */
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    position: relative;
+}
+.navigation-class{
+    display: flex; 
+    height: 6rem; 
+    width: 1474px; 
+    position: fixed; 
+    z-index: 5;
+}
+.nav{
+    margin: 0 6px 3px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navleft{
+    /* border: 1px solid black; */
+    width: 23%;
+}
+.navcentre{
+    /* border: 1px solid black; */
+    width: 48%;
+}
+.navright{
+    /* border: 1px solid black; */
+    width: 23%;
+}
+#hamburger-icon{
+    font-size: 3.5rem;
+    display: none;
+    position: relative;
+}
+#hamburger-options{
+    width: 10rem;
+    display: flex;
+    margin: 5px 0 0 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 4rem;
+}
+#hamburger-options a{
+    font: 12px sans-serif;
+}
+.navleft #logo{
+   margin: 5px 10px 5px 10px;
+   cursor: pointer;
+}
+.navleft #logo img{
+    height:75px;
+    width:125px;
+}
+.navleft #logo img:hover{
+    transform: scale(1.2);
+}
+.navcentre ul li{
+    display: inline-block;
+    border: 2px solid black;
+    height: 3rem;
+    width: 9rem;
+    padding: 10px 5px 0 5px;
+    margin: 0 40px 0 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font: 400 17px fantasy;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.navright i{
+    font-size: 24px;
+    cursor: pointer;
+    border-spacing: 10px;
+    border: 9px double transparent;
+}
+.navigation-class::before{
+    content: "";
+    background: lavender;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.45;
+    z-index: -1;
+}
+header::before{
+    content: "";
+    background: url(cakebg.jpg) no-repeat center center/cover;;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.65;
+}
+.navcentre ul li:hover{
+    background-color: aliceblue;
+}
+.navright i:hover{
+    border: 9px double aliceblue;
+}    
+/* Main Section */
+#introduction{
+    /* border: 1px solid black; */
+    margin-top: 17rem;
+    height: 12rem;
+}
+.intro-class{
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+.intro-class button{
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    margin: 15px 0 4px 0;
+    height: 2.1rem;
+    width: 8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.intro-class button:hover {
+  box-shadow: 0px 0px 0px 0px;
+}
+#about{
+    height: 35rem;
+    position: relative;
+}
+#about p{
+    text-align: justify;
+    margin-top: 10px;
+}
+#about #first{
+    margin-top: 50px;
+}
+.about-class::before{
+    content: "";
+    background: url(aboutusbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.65;  
+}
+#products{
+    height: 55rem;
+    position: relative;
+}
+#products-content{
+    /* border: 1px solid black; */
+    height: 52rem;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.image-options{
+    height: 23rem;
+    width: 25rem;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 15px;
+}
+.image-options .image{
+    height: 18rem;
+    width: 23rem;
+    background: url(latestproduct.jpg)  no-repeat center center/cover;
+    margin: auto auto 6px auto;
+    position: relative;
+}
+.image-options .options{
+    height: 3.5rem;
+    width: 22rem;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: cornsilk;
+    display: none;
+}
+.options i{
+    font-size: 27px;
+    margin: 5px;
+    cursor: pointer;
+}
+.image:hover .options{
+    display: flex;
+}
+.options i:hover{
+    color: 	brown;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#contactus{
+    height: 28rem;
+    position: relative;
+}
+#contact-form{
+    margin: 15px 5px 10px 5px;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 22rem;
+    width: 40rem;
+}
+#contact-form input, textarea{
+    display: block;
+}
+#contact-form label{
+    font: normal 18px cursive;
+    margin: 0 0 0 5px;
+}
+#contact-form input{
+    height: 1.5rem;
+    width: 20rem;
+    margin: 5px;
+}
+#contact-form button{
+    height: 2.2rem; 
+    width: 8rem; 
+    border-radius: 15px; 
+    margin: 10px 0 0 5px;
+    background-color: black; 
+    color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+#contact-form button:hover{
+    background-color: aliceblue;
+    color:black;
+    cursor: pointer;
+}
+.contactus-class::before{
+    content: "";
+    background: url(contactusbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.65;  
+}
+footer{
+    position: relative;
+    margin-top: 45px;
+}
+#footer-class{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+#footer-part1{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 20rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 90px;
+}
+.footer-box{
+    height: 15rem;
+    width: 15rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction:column;
+    align-items:start;
+}
+.footer-box-h3{
+    margin: 0 0 40px 5px;
+    font: bold 19px sans-serif;
+    letter-spacing: 1px;
+}
+.footer-box a{
+    margin: 8px 8px 8px 5px;
+    font: normal 16px cursive;
+    letter-spacing: 0.5px;
+    text-decoration: none; 
+    color: inherit;
+}
+.footer-box a i:hover{
+    color: brown
+}
+.footer-box a:hover{
+    text-decoration: underline;
+    color: brown
+}
+#footer-part2{
+    /* border: 1px solid black; */
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: 1em sans-serif;
+    letter-spacing: 1px;
+}
+#footer-class::before{
+    content: "";
+    background: url(footerbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.65;  
+}
+/* utility classes */
+.text{
+    font: 17px cursive;
+    margin: 8px 0 8px 0;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.sections{
+    margin: 20px 0 5px 0;
+    padding: 5px 10px 5px 10px;
+    /* border: 1px solid black; */
+}
+.h1-class{
+    font: 30px fantasy;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 5px;
+}
+/* CSS Variables  
+:root{
+    --section-height:50px
+}
+#about{
+    height: var(--section-height);
+}*/
+/* Media -Queries */
+/* The width of your current laptop screen is approx 12k-13k and height of your laptop screen is approx 8k-9k */
+@media only screen and (min-width: 2000px) {
+     /* designing considering minimum 2000px and maximum 2560px and beyond */
+     .navigation-class, .navigation{
+        width: 100vw;
+        height: 10rem;
+    }
+    .navleft{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre{
+        /* border: 1px solid black; */
+        width: 60%;
+        margin-right: 45px;
+    }
+    .navright{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre ul li{
+        height: 3.5rem;
+        width: 15rem;
+        padding: 10px 3px 0 3px;
+        margin: 0 30px 0 20px;
+        font:  400 30px fantasy;
+        letter-spacing: 1px;
+    }
+     .navleft #logo img{
+         height:130px;
+         width:175px;
+    }
+    .navright i{
+        font-size: 37px;
+    }
+    header::before{
+        height: 100%;
+        opacity: 0.55;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 10rem;
+        height: 17rem;
+    }
+    .intro-class{
+        padding: 5px 15px 5px 15px;
+    }
+    .intro-class button{
+        margin: 5px 0 4px 0;
+        height: 3rem;
+        width: 12rem;
+    }
+    #about{
+        height: 60rem;
+    }
+    #about #first{
+        margin-top: 30px;
+    }
+    #products{
+        height: 122rem;
+    }
+    .products-class{
+        height: 122rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 117rem;
+        padding: 15px;
+        padding: 40px 15px 15px 15px;
+    }
+    .image-options{
+        height: 34rem;
+        width: 43rem;
+        margin-right: 70px;
+    }
+    .image-options .image{
+        height: 27rem;
+        width: 31rem;
+    }
+    .image-options .options{
+        height: 4.5rem;
+        width: 31rem;
+    }
+    .options i{
+        font-size: 41px;
+    }
+    .image-options h2, h3{
+        font-size: 34px;
+        letter-spacing: 0.5px;
+    }
+    #contactus{
+        height: 38rem;
+    }
+    #contact-form{
+        height: 32rem;
+        width: 60rem;
+    }
+    #contact-form label{
+        font: normal 31px cursive;
+    }
+    #contact-form input{
+        height: 2.5rem;
+        width: 30rem;
+    }
+    #contact-form button{
+        height: 3.3rem;
+        width: 12rem;
+        margin: 20px 0 8px 5px;
+        font: 22px cursive;
+        letter-spacing: 1px;
+    }
+    .footer-box-h3{
+        font: bold 26px sans-serif;
+    }
+    .footer-box a{
+        font: normal 23px cursive;
+    }
+    .footer-box a i{
+        font-size: 28px;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.7em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 30px cursive;
+    }
+    .h1-class{
+        font: 46px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 25px 5px 25px;
+    } 
+}    
+@media only screen and (min-width: 1200px) and (max-width: 2000px){
+     /* designing considering minimum 1200px and maximum 2000px */
+     .navigation-class, .navigation{
+        width: 98vw;
+        height: 8rem;
+    }
+    .navigation-class::before{
+        width: 101%;
+    }
+    .navleft{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre{
+        /* border: 1px solid black; */
+        width: 60%;
+    }
+    .navright{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre ul li{
+        height: 3.3rem;
+        width: 9.4rem;
+        padding: 8px 3px 0 3px;
+        margin: 0 20px 0 20px;
+        font:  400 24px fantasy;
+    }
+    .navleft #logo{
+        margin: 3px 6px 3px 6px;
+    }
+     .navleft #logo img{
+         height:90px;
+         width:150px;
+    }
+    .navright i{
+        font-size: 30px;
+    }
+    header::before{
+        height: 100%;
+        opacity: 0.55;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 10rem;
+        height: 17rem;
+    }
+    .intro-class{
+        padding: 5px 15px 5px 15px;
+    }
+    .intro-class button{
+        margin: 5px 0 4px 0;
+        height: 2.7rem;
+        width: 11rem;
+    }
+    #about{
+        height: 56rem;
+    }
+    #about #first{
+        margin-top: 30px;
+    }
+    #products{
+        height: 95rem;
+    }
+    .products-class{
+        height: 95rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 90rem;
+        padding: 15px;
+        padding: 40px 15px 15px 15px;
+    }
+    .image-options{
+        height: 25rem;
+        width: 32rem;
+    }
+    .image-options .image{
+        height: 20rem;
+        width: 27rem;
+    }
+    .image-options .options{
+        height: 4rem;
+        width: 27rem;
+    }
+    .options i{
+        font-size: 35px;
+    }
+    .image-options h2, h3{
+        font-size: 25px;
+        letter-spacing: 0.5px;
+    }
+    #contactus{
+        height: 35rem;
+    }
+    #contact-form{
+        height: 29rem;
+        width: 55rem;
+    }
+    #contact-form label{
+        font: normal 21px cursive;
+    }
+    #contact-form input{
+        height: 2rem;
+        width: 25rem;
+    }
+    #contact-form button{
+        height: 2.7rem;
+        width: 10rem;
+        margin: 20px 0 8px 5px;
+        font: 19px cursive;
+        letter-spacing: 1px;
+    }
+    .footer-box-h3{
+        font: bold 21px sans-serif;
+    }
+    .footer-box a{
+        font: normal 19px cursive;
+    }
+
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.3em sans-serif;
+    }
+    .footer-box a i{
+        font-size: 23px;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 22px cursive;
+    }
+    .h1-class{
+        font: 40px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 15px 5px 15px;
+    } 
+}
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    .navigation-class{
+        width: 100%;
+    }
+    .navleft{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre{
+        /* border: 1px solid black; */
+        width: 58%;
+    }
+    .navright{
+        /* border: 1px solid black; */
+        width: 20%;
+    }
+    .navcentre ul li{
+        height: 2.2rem;
+        width: 8.5rem;
+        padding: 5px 3px 0 3px;
+        margin: 0 20px 0 20px;
+        font:  18.5px fantasy;
+    }
+    .navleft #logo{
+        margin: 3px 6px 3px 6px;
+    }
+     .navleft #logo img{
+         height:70px;
+         width:115px;
+    }
+    .navright i{
+        font-size: 23px;
+    }
+    header::before{
+        height: 68%;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 10rem;
+        height: 10rem;
+    }
+    .intro-class{
+        padding: 5px 15px 5px 15px;
+    }
+    .intro-class button{
+        margin: 5px 0 4px 0;
+        height: 1.8rem;
+        width: 6rem;
+    }
+    #about{
+        height: 25rem;
+    }
+    #about #first{
+        margin-top: 30px;
+    }
+    #products{
+        height: 80rem;
+    }
+    .products-class{
+        height: 80rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 78rem;
+        padding: 15px;
+        padding: 40px 15px 15px 15px;
+    }
+    #contact-form button{
+        height: 2rem;
+        width: 8.5rem;
+        margin: 12px 0 8px 5px;
+        font: 14px cursive;
+        letter-spacing: 1px;
+    }
+    .footer-box a{
+        font: normal 18px cursive;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.2em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 14px cursive;
+    }
+    .h1-class{
+        font: 27px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 10px 5px 10px;
+    } 
+}
+@media only screen and (min-width: 768px) and (max-width:992px) {
+    .navigation, .navigation-class{
+        height: 8rem;
+    }
+    .navleft{
+        width: 100%;
+    }
+    #hamburger-icon {
+        font-size: 3.5rem;
+        display: flex;
+        position: relative;
+    }
+    #hamburger-options{
+        display: none;
+        width: 17rem;
+    }
+    .navleft #hamburger-icon:hover #hamburger-options{
+        width: 20rem;
+        display: flex;
+        margin: 5px 0 0 20px;
+        flex-direction: column;
+        position: absolute;
+        top: -0.5rem;
+        left: 4rem;
+        border: 1px solid brown;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+    }
+    #hamburger-options a{
+        font: bold 28px cursive;
+        border-bottom: 5px double transparent;
+    }
+    #hamburger-options a:hover{
+        border-bottom: 5px double brown;
+        color: brown;
+    }
+    .navleft #logo{
+        margin: 3px 6px 3px 6px;
+    }
+    .navleft #logo img{
+        height:100px;
+        width:130px;
+    }
+    .navcentre{
+        display: none;
+    }
+    .navright{
+        display: none;
+    }
+    header::before{
+        height: 165%;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 10rem;
+        height: 20rem;
+    }
+    .intro-class button{
+        margin: 6px 0 4px 0;
+        height: 2.5rem;
+        width: 12rem;
+        text-align: center;
+    }
+    #about{
+        height: 80rem;
+        padding: 5px 20px 5px 20px;
+        margin-top: 39px;
+    }
+    #about #first{
+        margin-top: 20px;
+    }
+    #products{
+        height: 180rem;
+    }
+    .products-class{
+        height: 180rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 175rem;
+    }
+    .image-options{
+        width: 35rem;
+        height: 25rem;
+        margin: 50px 0 0 15px;
+    }
+    .image-options .image{
+        width: 28rem;
+    }
+    .image-options .options{
+        width: 28rem;
+        height: 4.5rem;
+    }
+    .options i{
+        font-size: 43px;
+    }
+    .image-options h2, h3{
+        font-size: 35px;
+    }
+    #contactus{
+        height: 36rem;
+    }
+    #contact-form{
+        height: 30rem;
+    }
+    #contact-form label{
+        font: normal 26px cursive;
+    }
+    #contact-form input{
+        height: 2rem;
+        width: 25rem;
+        margin: 8px;
+    }
+    #contact-form button{
+        height: 3rem;
+        width: 12rem;
+        margin: 27px 0 8px 5px;
+        font: 21px cursive;
+    }
+    .footer-box-h3{
+        font: bold 24px sans-serif;
+        letter-spacing: 0.5px;
+    }
+    .footer-box a{
+        font: normal 22px cursive;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.6em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 25px cursive;
+        text-align: justify;
+    }
+    .h1-class{
+        font: 40px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 10px 5px 10px;
+    } 
+}
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    body{
+        width: 768px;
+    }
+    .navigation, .navigation-class, .navleft{
+        height: 11rem;
+        width: 768px;
+    }
+    #hamburger-icon {
+        font-size: 5rem;
+        display: flex;
+        left: -7rem;
+    }
+    .navleft #logo{
+        position: relative;
+        left: -7rem;
+    }
+    .navleft #logo img{
+        height:135px;
+        width:180px;
+    }
+    #hamburger-options{
+        display: none;
+    }
+    #hamburger-options a{
+        font: bold 29px cursive;
+    }
+    .navleft #hamburger-icon:hover #hamburger-options{
+        display: flex;
+        width: 20rem;
+        border: 1px solid brown;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+        top:2.5rem
+    }    
+    #hamburger-options a:hover{
+        border-bottom: 5px double brown;
+        color: brown;
+    }
+    .navcentre, .navright{
+        display: none;
+    }
+    header::before{
+        height: 165%;
+        width: 768px;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 8rem;
+        height: 28rem;
+    }
+    .intro-class button{
+        margin:0 0 4px 0;
+        height: 3rem;
+        width: 12rem;
+        text-align: center;
+    }
+    #about{
+        height: 120rem;
+        padding: 5px 20px 5px 20px;
+        margin-top: 49px;
+    }
+    #about #first{
+        margin-top: 20px;
+    }
+    #products{
+        height: 180rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 175rem;
+    }
+    .image-options{
+        width: 36rem;
+        height: 25rem;
+        margin: 50px 0 0 15px;
+    }
+    .image-options .image{
+        width: 29rem;
+    }
+    .image-options .options{
+        width: 29rem;
+        height: 4.5rem;
+    }
+    .options i{
+        font-size: 43px;
+    }
+    .image-options h2, h3{
+        font-size: 36px;
+    }
+    #contactus{
+        height: 41rem;
+    }
+    #contact-form{
+        height: 34rem;
+    }
+    #contact-form label{
+        font: normal 30px cursive;
+    }
+    #contact-form input{
+        height: 2.8rem;
+        width: 26rem;
+        margin: 8px;
+    }
+    #contact-form button{
+        height: 3.5rem;
+        width: 14rem;
+        margin: 27px 0 8px 5px;
+        font: 25px cursive;
+        letter-spacing: 1px;
+    }
+    .footer-box-h3{
+        font: bold 23px sans-serif;
+        letter-spacing: 0.5px;
+    }
+    .footer-box a{
+        font: normal 22px cursive;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.6em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 30px cursive;
+        text-align: justify;
+    }
+    .h1-class{
+        font: 43px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 10px 5px 10px;
+    } 
+}    
+@media only screen and (min-width: 360px) and (max-width: 600px) {
+
+    body{
+        width: 186vw;
+    }
+    .navigation, .navigation-class, .navleft{
+        height: 11rem;
+        width: 186vw;
+    }
+    #hamburger-icon {
+        font-size: 4.5rem;
+        display: flex;
+        left: -5rem;
+    }
+    .navleft #logo{
+        position: relative;
+        left: 5rem;
+    }
+    .navleft #logo img{
+        height:120px;
+        width:180px;
+    }
+    #hamburger-options{
+        display: none;
+    }
+    #hamburger-options a{
+        font: bold 31px cursive;
+    }
+    .navleft #hamburger-icon:hover #hamburger-options{
+        display: flex;
+        width: 20rem;
+        border: 1px solid brown;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+        top:0.5rem
+    }    
+    #hamburger-options a:hover{
+        border-bottom: 5px double brown;
+        color: brown;
+    }
+    .navcentre, .navright{
+        display: none;
+    }
+    header::before{
+        height: 216%;
+        width: 186vw;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 8rem;
+        height: 28rem;
+    }
+    .intro-class button{
+        margin:0 0 4px 0;
+        height: 3rem;
+        width: 12rem;
+        text-align: center;
+    }
+    #about{
+        height: 135rem;
+        padding: 5px 20px 5px 20px;
+        margin-top: 49px;
+    }
+    #about #first{
+        margin-top: 20px;
+    }
+    #products{
+        height: 195rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 190rem;
+    }
+    .image-options{
+        width: 45rem;
+        height: 28rem;
+        margin: 50px 0 0 15px;
+    }
+    .image-options .image{
+        width: 33rem;
+        height: 21.5rem;
+    }
+    .image-options .options{
+        width: 33rem;
+        height: 4.5rem;
+    }
+    .options i{
+        font-size: 43px;
+    }
+    .image-options h2, h3{
+        font-size: 36px;
+    }
+    #contactus{
+        height: 43rem;
+    }
+    #contact-form{
+        height: 36rem;
+        width: 38rem;
+    }
+    #contact-form label{
+        font: normal 32px cursive;
+    }
+    #contact-form input{
+        height: 2.8rem;
+        width: 26rem;
+        margin: 8px;
+    }
+    #contact-form button{
+        height: 3.5rem;
+        width: 14rem;
+        margin: 27px 0 8px 5px;
+        font: 25px cursive;
+        letter-spacing: 1px;
+    }
+    #footer-class{
+        height: 40rem;
+    }
+    #footer-part1{
+        height: 35rem;
+    }
+    .footer-box-h3{
+        font: bold 23px sans-serif;
+        letter-spacing: 0.5px;
+        margin-right: 8px;
+    }
+    .footer-box a{
+        font: normal 22px cursive;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.6em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 31px cursive;
+        text-align: justify;
+    }
+    .h1-class{
+        font: 45px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 25px 5px 25px;
+    } 
+}
+@media only screen and (max-width: 360px) {
+    /* designing considering minimum 280px and maximum 360px */
+    body{
+        width: 228vw;
+    }
+    .navigation, .navigation-class, .navleft{
+        height: 11rem;
+        width: 228vw;
+    }
+    .navigation-class::before{
+        width: 233vw;
+    }
+    #hamburger-icon {
+        font-size: 4.5rem;
+        display: flex;
+        left: -5rem;
+    }
+    .navleft #logo{
+        position: relative;
+        left: 5rem;
+    }
+    .navleft #logo img{
+        height:120px;
+        width:180px;
+    }
+    #hamburger-options{
+        display: none;
+    }
+    #hamburger-options a{
+        font: bold 31px cursive;
+    }
+    .navleft #hamburger-icon:hover #hamburger-options{
+        display: flex;
+        width: 20rem;
+        border: 1px solid brown;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        cursor: pointer;
+        top:0.5rem
+    }    
+    #hamburger-options a:hover{
+        border-bottom: 5px double brown;
+        color: brown;
+    }
+    .navcentre, .navright{
+        display: none;
+    }
+    header::before{
+        height: 216%;
+        width: 233vw;
+        opacity: 0.55;
+    }
+    /* Main Section */
+    #introduction{
+        /* border: 1px solid black; */
+        margin-top: 8rem;
+        height: 28rem;
+    }
+    .intro-class button{
+        margin:0 0 4px 0;
+        height: 3rem;
+        width: 12rem;
+        text-align: center;
+    }
+    #about{
+        height: 156rem;
+        padding: 5px 20px 5px 20px;
+        margin-top: 49px;
+    }
+    .about-class::before{
+        opacity: 0.35;
+        width: 233vw;
+    }
+    #about #first{
+        margin-top: 20px;
+    }
+    #products{
+        height: 185rem;
+    }
+    #products-content{
+        /* border: 1px solid black; */
+        height: 180rem;
+    }
+    .image-options{
+        width: 45rem;
+        height: 29rem;
+        margin: 50px 0 0 15px;
+    }
+    .image-options .image{
+        width: 33rem;
+    }
+    .image-options .options{
+        width: 33rem;
+        height: 4.5rem;
+    }
+    .options i{
+        font-size: 43px;
+    }
+    .image-options h2, h3{
+        font-size: 42px;
+        letter-spacing: 0.5px;
+    }
+    #contactus{
+        height: 43rem;
+    }
+    .contactus-class::before{
+        width: 233vw;
+    }
+    #contact-form{
+        height: 36rem;
+        width: 36rem;
+    }
+    #contact-form label{
+        font: normal 35px cursive;
+    }
+    #contact-form input{
+        height: 2.8rem;
+        width: 26rem;
+        margin: 8px;
+    }
+    #contact-form button{
+        height: 3.5rem;
+        width: 14.5rem;
+        margin: 27px 0 8px 5px;
+        font: 28px cursive;
+        letter-spacing: 1px;
+    }
+    #footer-class{
+        height: 45rem;
+    }
+    #footer-class::before{
+        width:233vw ;
+    }
+    #footer-part1{
+        height: 40rem;
+    }
+    .footer-box-h3{
+        font: bold 27px sans-serif;
+        letter-spacing: 0.5px;
+        margin-right: 8px;
+    }
+    .footer-box a{
+        font: normal 25px cursive;
+    }
+    .footer-box a i{
+        font-size: 34px;
+    }
+    #footer-part2{
+        /* border: 1px solid black; */
+        font: 1.9em sans-serif;
+    }
+    /* UTILITY CLASSES */
+    .text{
+        font: 530 31px cursive;
+        text-align: justify;
+    }
+    .h1-class{
+        font: 45px fantasy;
+    }
+    .sections{
+        margin: 20px 0 5px 0;
+        padding: 5px 25px 5px 25px;
+    } 
+}

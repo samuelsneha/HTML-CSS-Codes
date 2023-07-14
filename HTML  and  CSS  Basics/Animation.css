@@ -1,0 +1,29 @@
+#animation1{
+    height: 200px;
+	width: 200px;
+	transition: 1s ease-in-out;
+	position: relative;
+	top: 20%;
+	left: 20%;	
+	background-color: blue;
+}
+#animation1:hover{
+	transform: scale(1.5) translate(150px);
+}
+#animation2{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background-color: aquamarine;
+	animation: changeShapesss 1s ease-in-out infinite alternate;
+}
+@keyframes changeShapesss{
+	from{
+		border-radius: 0%;
+	}
+	to{
+		border-radius: 50%;
+	}
+}

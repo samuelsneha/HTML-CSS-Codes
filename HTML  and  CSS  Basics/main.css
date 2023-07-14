@@ -1,0 +1,36 @@
+body{
+  background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-light {
+      background-color: transparent !important;
+  }
+  .jumbotron .bg-secondary{
+    margin-left: -15px !important;
+  }
+  #searchdiv{
+    background-color: whitesmoke !important;
+    margin-left: -9px;
+    border: 2px solid lightgray;
+    margin-bottom: -30px !important;
+    padding: 5px;
+    padding-left: 10px !important;
+  }
+  #carouselExampleIndicators{
+    position:relative;
+    top:-90px;
+  }
+  .navbar{
+    
+    z-index:20;
+  }
+  .jumbotron{
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+    margin-bottom: 80px !important;
+    border-radius: 0rem;
+  }
+
+  

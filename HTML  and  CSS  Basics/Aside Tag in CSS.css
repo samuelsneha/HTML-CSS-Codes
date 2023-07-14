@@ -1,0 +1,45 @@
+/*aside*/
+
+.aside{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5%;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+.main{
+    width: 60%;
+    display: inline-block;
+    margin right: 7%;
+    margin-left: 2%;
+}
+.widgets{
+
+	border-top: solid black 5px;
+}	
+.class1{
+
+	border: 1px solid hsl(0deg 0% 90%);
+	display: block;
+    margin-bottom: 15px;
+    padding: 4px;
+    color: black;
+    font-size: 0.8rem;
+    background-color: hsl(0deg 0% 90%);
+}
+#id1{
+ text-transform: uppercase;
+ font-weight: bolder;
+ word-spacing: 0.15rem;
+ font-size: 1.0rem;
+}
+#id2{
+ border: none;
+ padding: 12px 18px;
+ color: white;
+ background-color: black;
+ border-radius: 5px;
+ font-size: 0.8rem;
+ letter-spacing: 0.1rem;
+}

@@ -1,0 +1,42 @@
+/* ACTIVE  */
+
+#active1:active{
+	color: pink;
+}
+#active2:active{
+	color: red;
+}
+
+/* VISITED */
+
+#visited1:visited, #visited2:visited, #visited3:visited, #visited4:visited, #unvisited1:visited, #unvisited2:visited, #unvisited5: visited {
+	color: gold;
+}
+/*#unvisited2:visited{
+	color: black;
+}
+*/
+/* UNVISITED */
+
+#unvisited1, #unvisited2, #unvisited5, #unvisited3:link{
+	color: cyan;
+}
+#unvisited4:link{
+	color: green;
+}
+
+/* TARGET */
+
+section:target{
+	background-color: orange;
+}
+
+/* UNVISITED  */
+#unvisited4:visited, #unvisited3:visited{
+	color: gold;
+}
+
+#visited1:visited,#visited2:visited, #visited3:visited, #visited4:visited{
+	color:gold;
+	/* didnt understand why these properties at line 12 didnt work. Its wierd so ignore them for now. Rest all were fine.  */
+}

@@ -1,0 +1,36 @@
+p{
+	color: gold;
+}
+.class1{
+	color: pink;
+}
+#id1{
+	color: yellowgreen;
+}
+.class2{
+	font-family: fantasy;
+}
+#id2{
+	font-family: cursive;
+}
+h1{
+	font-family: monospace;
+}
+.class3{
+     color: red;    
+}
+.class4{
+     color: lavender;
+}
+.class5{
+     color: aqua;
+}
+h3{
+	border-style: double;
+}
+h3{
+	border-style: groove;
+}
+h3{
+	border-style: dotted;
+}

@@ -1,0 +1,304 @@
+body {
+    margin-left: 60px;
+    margin-right: 20px;
+    font-family: serif;
+}
+
+img {
+    width: 100%;
+}
+
+/*-----header-----*/
+
+#main-header {
+    margin-top: 60px;
+}
+
+#logo img {
+    max-width: 210px;
+}
+
+#site-title {
+    margin-bottom: 0;
+}
+
+#site-title a {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.25;
+    font-family: sans-serif;
+}
+
+#site-title a:hover {
+    color: #dc6520;
+}
+
+#about-site {
+    color: #3c5349;
+    margin-top: 5px;
+    font-size: 1.07rem;
+    font-weight: 250;
+}
+
+#header-image-container {
+    margin-top: 50px;
+}
+
+
+
+/*-----main-----*/
+
+main {
+    width: 70%;
+    display: inline-block;
+}
+#content {
+    margin-top: 80px;
+}
+
+/*------header------*/
+
+#blog-header {
+    margin-bottom: 40px;
+}
+
+#blog-header h1 {
+    font-size: 3.1rem;
+    color: #13222c;
+    font-family: sans-serif;
+    margin-bottom: 40px;
+    letter-spacing:0.05rem ;
+    word-spacing: 0.1rem;
+}
+
+/*------- author------ */
+/* You are supposed to make this div as inline-block, not image as inline block */
+#author-container{
+    display:inline-block;
+    vertical-align:top;
+     margin-right: 95px; 
+}
+#author-container img{
+/*     display: inline-block; */
+    height: 60px;
+    width: 60px;
+    margin-bottom: 7px;
+    margin-left: 17px;
+    margin-top: 20px;
+    border-radius: 45px;
+}
+#author-container p{
+    color: black;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    font-family: sans-serif;
+}
+
+/*-----views-----*/
+#blog-content {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    line-height: 1.4;
+    width: 60%;
+    font-family: sans-serif;
+    margin-right: 30px;
+}
+#views {
+    margin-bottom: 1px;
+    margin-right: 3px;
+}
+#views img {
+    margin-left: 2px;
+    margin-right: 3px;
+    margin-top: 25px;
+    /*margin-bottom: 2px;*/
+    width: 20px;
+    height: 23px;
+/*  padding: 45px; */
+}
+#views span {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+.temp{
+    height:330px ;
+    width:630px ;
+    /*padding: 15px;*/
+    width:100%;
+}
+
+/*-----blog content-----*/
+
+#blog-content h4.h-style {
+    margin-bottom: 0;
+}
+#blog-content ol li p {
+    margin-top: 10px;
+}
+#blog-content .sources a {
+    text-decoration: none;
+}
+#blog-content .sources a:hover {
+    color: #000000;
+}
+
+/*-----aside-----*/
+
+aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+    width: 25%;
+    margin-top: 100px;
+}
+/*section-1*/
+.widget {
+    border-top: 4px solid black;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-top:5px;
+    width:100%;
+}
+.widget .widget-title {
+    letter-spacing: 0.05rem;
+    font-size: bolder;
+    word-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-family:sans-serif;
+}
+.widget label{
+    color: black;
+}
+#email-label{
+    margin-top:10px; 
+    display:inline-block;
+}
+.widget input{
+    background-color: #EFEFEF;
+    border: 0.5px; 
+    border-style: solid;
+    border-color: lightgray;
+    padding: 2px;
+    margin-bottom: 3px;
+    width: 300px;
+    height: 30px;
+}
+button[type="submit"] {
+    background-color: black;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    padding: 12px 18px;
+    margin-bottom: 30px;
+    border:none;
+}
+button[type="submit"]:hover {
+    background-color: #dc6520;
+}
+
+/*section-2*/
+
+/*input,
+textarea {
+    margin-bottom: 15px;
+    padding: 4px 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    color: #686868;
+    display: block;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #000000;
+}*/
+#search{
+    display: inline-block;
+}
+#input_search{
+    margin-top: 30px;
+    display:inline-block;
+    width:60%;
+    background-color: #EFEFEF;
+    border: 0.5px solid lightgray;
+    padding: 4px 12px;
+    margin-bottom: 65px;
+    width: 315px;
+    height: 37px;
+    font-size: 1.05rem;
+}
+#search_button{
+    display:inline-block;
+    height:37px;
+    width:40px;
+    /*border-radius: 7px;*/
+    padding: 2px ;
+    background-color: black;
+    margin-bottom: 65px;
+    position: absolute;
+    right: 45px;
+    top: 1097px;
+}
+#search_button img{
+    height: 20px;
+    width:18px;
+    vertical-align:middle;
+    /*margin-left:-6px;*/
+    /*margin-top:-15px;*/
+    padding: 5px;
+}
+/*section-3*/
+#recent-posts{
+    margin-bottom: 60px;
+}
+#recent-posts-title{
+    text-transform: uppercase;
+    /*letter-spacing: 0.05rem;*/
+    font-size: 1.1rem;
+    word-spacing: 0.1rem;
+    margin-bottom: 20px; 
+    font-weight: bolder;    
+}
+#recent-posts ul li a{
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    text-decoration: none;
+    color: #dc6520;
+    margin-bottom: 60px;
+}
+/*section-4*/
+#recent-comments{
+    margin-bottom: 60px;
+}
+#recent-comments-title{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+#recent-comments ul li a{
+     letter-spacing: 0.05rem;
+     word-spacing: 0.1rem;
+     text-decoration: none;
+     color: orangered;
+     margin-bottom: 40px;
+}
+/*section-5*/
+#categories-title{
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+#categories ul li a{
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    text-decoration: none;
+    color: orangered;
+} 

@@ -1,0 +1,1805 @@
+body{
+	margin: 0px;
+	background-color: #07071a;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+	position: sticky;
+	top: 0px;
+	background-color: #07071a;
+}
+nav{
+	display: flex;
+	background-color: #07071a
+}
+#nav-outer{
+	display: flex;
+	width: 100vw;
+}
+#nav-left{
+	display: flex;
+	justify-self: start;
+	width: 50vw;
+}
+#nav-right{
+	display: flex;
+	justify-self: end;
+	width: 50vw;
+}
+/* NAVIGATION - LOGO */
+#navigation-logo{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    position: relative;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 40%;
+	border: 25px double red;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 4rem;
+	color: #83f73b;
+	position: absolute;
+	top: 3.5rem;
+	left: 3.5rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text{
+	display: inline-block;
+}
+#nav-left-text p{
+	color: white;
+	font-family: cursive;
+	font-size: 1.5rem;
+	margin-top: 5.5rem;
+	margin-left: 4rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+#navigation-search{
+	display: flex;
+	height: 3rem;
+	margin-top: 4rem;
+	border: 2px solid white;
+	border-radius: 1.5rem;
+	background-color:#1c0d36;
+}
+/* NAVIGATION - SEARCH TAG */
+#nav-search{
+	font-size: 1.5rem;
+	color: lightgray;
+	position: relative;
+}
+#nav-search i{
+	margin-top: 0.8rem;
+	margin-left: 0.7rem;
+}
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    color: white;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border: 0;
+    background-color: transparent;
+    padding-top: 0.6rem;
+    border-color: transparent;
+}
+/* MICROPHONE */
+#microphone i{
+    font-size: 1.8rem;
+    color: lightgray;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	height: 2rem;
+	margin-top: 4.5rem;
+	position: relative;
+}
+#notifications #bell{
+	color: lightgray;
+	font-size: 1.8rem;
+	padding-left: 2rem;
+}
+#notifications #circle{
+	position: absolute;
+	left: 3rem;
+    color: red;
+    font-size: 0.7rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+	height: 45px;
+	width: 45px;
+	position: relative;
+	background-color: transparent;
+	margin-top: 4rem;
+	margin-left: 2rem;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	display: none;
+}
+/* MAIN */
+main{
+	width: 65%;
+	display: inline-block;
+}
+/* ARTIST - INFO */
+#artist-info{
+	display: flex;
+	margin-left: 6rem;
+	margin-top: 6rem;
+	/*border: 3px solid white;*/
+	color: white;
+}
+#left-img{
+	max-height: 350px;
+	max-width: 250px;
+}
+#left-img img{
+	height: 100%;
+	width: 100%;
+}
+#left-img img:hover{
+	transform: scale(1.2);
+}
+#right-text{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-right: 1rem;
+}
+#name-followers{
+	display: flex;
+	margin-left: 2rem;
+}
+#name-followers h4{
+	margin-left: 18rem;
+}
+#band-info{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+#band-info h4{
+	margin-top: -1rem;
+}
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+}
+#play-follow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+#play-follow button{
+	width: 7.5rem;
+	height: 2.5rem;
+    background: linear-gradient(to right,red,yellow);
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 10%;
+} 
+#play-follow a{
+	margin-left: 4rem;
+	margin-top: -0.8rem;
+	text-decoration: none;
+}
+#tracks-albums{
+	display: flex;
+	margin-left: 2rem;
+}
+#play-follow button:hover {
+	color: white;
+}
+#play-follow a:hover{
+	color: white;
+}
+
+/* MIDDLE SECTION */
+#middle-section{
+	color: floralwhite;
+	margin-left: 4rem;
+	margin-top: 3rem;
+}
+#middle-section-list li .lists-block{
+	display: flex;
+	height: 4rem;
+	width: 45rem;
+	margin-top: 1.5rem;
+    background-color: #0b1a20;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+.lists-image{
+	height: 70px;
+	width: 70px;
+	margin-right: 2rem;
+}
+.lists-image img{
+	height: 100%;
+	width: 100%;
+}
+.lists-block h2{
+    margin-top: -0.1rem;
+}
+.lists-block .else{
+	margin-top: 2rem;
+	margin-left: -4.8rem;
+}
+.lists-block .time{
+	margin-left: 7rem;
+	margin-top: 0rem;
+}
+.lists-block .heart{
+	margin-left: 13rem;
+}
+.lists-block i{
+	margin-top: 1rem;
+	margin-left: 3rem;
+}
+#middle-section li:hover{
+	/*background-color: #202324;*/
+	background-color: #32393c;
+	color: skyblue;
+}
+/* ASIDE */
+aside{
+	/*display: block;*/
+    /*float: right;*/
+    /*width: 34%;*/
+    display: inline-block;
+    width: 25%;
+    height:90rem;
+    vertical-align: top;
+    /*border: 3px solid white;*/
+    /*margin-top: -91rem;*/
+    margin-left: 6rem;
+    /*margin-right: 0rem;*/
+}
+/* SIMILAR ARTISTS */
+#similar-artist{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: serif;
+	height: 40rem;
+	/*border: 3px solid pink;*/
+	overflow-y: scroll;
+	/*height: 30rem;*/
+    width: 29rem;
+}
+/* SIMILAR ARTIST - HEADING */
+#similar-artist-heading{
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+#similar-artist-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 2rem;
+	width: 100%;
+	
+}
+#similar-artist-heading .artist-heading-h4{
+	margin-left: 8rem;
+	color: red;
+	font-size: 1rem;
+}
+#similar-artist-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+#similar-artist-heading a:hover{
+	color: white;
+}
+/* SIMILAR ARTIST - CONTENT */
+#similar-artist-content{
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.similar-artist-block{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	background-color: #0b1a20;
+	padding: 0.5rem;
+}
+.similar-artist-block .image{
+    height: 110px;
+    width: 130px;
+    /*margin-left: -25rem;*/
+    /*margin-top: -8rem;*/
+}
+.similar-artist-block .image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+}
+.songname-artist{
+	margin-left: 2rem;
+    /*margin-top: -10rem;*/
+}
+.i-time{
+	margin-top: -2.5rem;
+}
+.i-time i{
+	/*margin-top: -1rem;*/
+    margin-left: 2rem;
+}
+.similar-artist-block:hover{
+	color: lightgray;
+}
+.i-time i:hover{
+    color: blue;
+}
+
+/* RECENTLY PLAYED */
+#recently-played{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: serif;
+	height: 40rem;
+	/*border: 3px solid pink;*/
+	overflow-y: scroll;
+	/*height: 30rem;*/
+    width: 29rem;
+}
+/* RECENTLY PLAYED - HEADING */
+#recently-played-heading{
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+#recently-played-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 1.8rem;
+	width: 100%;
+}
+#recently-played-heading .artist-heading-h4{
+	margin-left: 8rem;
+	color: red;
+	font-size: 1rem;
+}
+#recently-played-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+#recently-played-heading a:hover{
+	color: white;
+}
+/* RECENTLY PLAYED - CONTENT */
+#recently-played-content{
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.recently-played-block{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	background-color: #0b1a20;
+	padding: 0.5rem;
+}
+.recently-played-block .image{
+    height: 110px;
+    width: 130px;
+    /*margin-left: -25rem;*/
+    /*margin-top: -8rem;*/
+}
+.recently-played-block .image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+}
+.songname-artist{
+	margin-left: 2rem;
+    /*margin-top: -10rem;*/
+}
+.i-time{
+	margin-top: -2.5rem;
+}
+.i-time i{
+	/*margin-top: -1rem;*/
+    margin-left: 2rem;
+}
+.i-time #heart:hover{
+    color: red;
+}
+.recently-played-block:hover{
+	color: lightgray;
+}
+/* FOOTER SECTION */
+/* BOTTOM PLAYER */
+#footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+	width: 127vw;
+}
+#bottom-player{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 10rem;
+	background-color:#424242;
+	padding-top: 1rem;
+	padding-left: 1rem;
+}
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i #song-name{
+	margin-left: 18rem;
+	margin-top: -7rem;
+}
+#left #author-i #author{
+	margin-left: 18rem;
+}
+#left #left-i{
+    margin-left: 26rem;
+    margin-top: -5.3rem;
+}
+#left #left-i i{
+	margin-top:-3rem;
+	margin-left: 1rem;
+}
+#center #center-i {
+    margin-top: -1rem;
+    margin-left: 33rem;
+} 
+#center #center-i i{
+	margin-left: 3rem;
+	font-size: 1.5rem;
+}
+#center #center-range{
+    margin-left: 29rem;
+}
+#center #center-range input{
+	width: 38rem;
+    margin-top: 1rem;
+}
+#right{
+	margin-left: 65rem;
+	margin-top: -4rem;
+}
+#right i{
+	margin-left: 1rem;
+}
+#right #center-range{
+	margin-top: -1rem;
+}
+#right input{
+	margin-left: 8rem;
+	margin-top: -1rem;
+}
+
+
+
+
+
+/* MEDIA QUERIES FOR 1024 */
+@media only screen and (max-width: 1024px){
+body{
+	margin: 0px;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+    width: 302vw;
+    height: 25rem;
+}
+#nav-outer{
+	width: 302vw;
+	height: 25rem;
+}
+#nav-left{
+	width: 151vw;
+}
+#nav-right{
+	width: 151vw
+	justify-content: start;
+}
+#navigation-logo{
+    height: 180px;
+    width: 180px;
+    margin-top: 5.5rem;
+    margin-left: 7rem;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 8rem;
+	top: 7rem;
+	left: 7rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text p{
+	color: white;
+	font-family: cursive;
+	font-size: 3.5rem;
+	margin-top: 13rem;
+	margin-left: 6rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+#navigation-search{
+	height: 4rem;
+	width: 29rem;
+	margin-top: 12rem;
+	display: none;
+}
+/* NAVIGATION - SEARCH TAG */
+#nav-search{
+	font-size: 1.8rem;
+}
+#nav-search i{
+	margin-top: 1.2rem;
+	margin-left: 1rem;
+}
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    font-size: 2rem;
+}
+/* MICROPHONE */
+#microphone i{
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    margin-left: -1rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	margin-top: 12.5rem;
+	display: none;
+}
+#notifications #bell{
+	font-size: 3rem;
+	padding-left: 2rem;
+	margin-left: 3rem;
+}
+#notifications #circle{
+	left: 6.5rem;
+    font-size: 0.9rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+    margin-top: 12rem;
+    height: 75px;
+    width: 75px;
+    margin-left: 7rem;
+    display: none;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	display: inline-block;
+	font-size: 7rem;
+	margin-top: 12rem;
+    margin-left: 50rem;
+	color: white;
+}
+#nav-hamburger-icon{
+	height: 30rem;
+	width: 30rem;
+	/*border: 2px solid white;*/
+	display: none;
+}
+#nav-hamburger-icon h4{
+	font-size: 3.2rem;
+	font-family: sans-serif;
+}
+#nav-hamburger-icon h4 i{
+	font-size: 3.2rem;
+}
+#nav-hamburger-icon i{
+	margin-right: 2rem;
+}
+#hamburger-icon:hover #nav-hamburger-icon{
+    display: inline-block;
+}
+main{
+	width: 100%;
+}
+#left-img{
+	width: 150rem;
+	height: 39rem;
+	margin-top: 15rem;
+}
+#right-text #name-followers h1{
+    font-size: 2.5rem;
+}
+#right-text #name-followers h4{
+    font-size: 2rem;
+}
+#band-info h4{
+    font-size: 2rem;
+}
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+	font-size: 2.5rem;
+	margin-top: 0px;
+	/*word-spacing: 0.2rem;*/
+	width: 140%;
+}
+#play-follow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+	font-size: 1.7rem;
+}
+#play-follow button{
+	width: 10.5rem;
+	height: 5.5rem;
+    background: linear-gradient(to right,red,yellow);
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 10%;
+    font-size: 1.5rem;
+} 
+#play-follow a{
+	margin-left: 4rem;
+	margin-top: -0.8rem;
+	text-decoration: none;
+	font-size: 2rem;
+}
+#play-follow h3{
+	font-size: 2rem;
+}
+#tracks-albums h4{
+	font-size: 2rem;
+}
+#play-follow button:hover {
+	color: white;
+}
+#play-follow a:hover{
+	color: white;
+}
+#similar-artist{
+	width: 65rem;
+}
+#similar-artist-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 3rem;
+	width: 100%;
+}
+#similar-artist-heading .artist-heading-h4{
+	/*margin-left: 8rem;*/
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	color: red;
+}
+#similar-artist-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.similar-artist-block{
+	justify-content: start;
+}
+.similar-artist-block .image{
+	height: 155px;
+	width: 155px;
+}
+.songname-artist h3{
+	font-size: 2.3rem;
+}
+.songname-artist h4{
+	font-size: 2rem;
+}
+.i-time{
+	font-size: 2rem;
+	margin-left: 5rem;
+}
+#similar-artist-heading a:hover{
+	color: white;
+}
+#recently-played{
+	width: 65rem;
+}
+#recently-played-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 3rem;
+	margin-top: 2.5rem;
+	width: 100%;
+}
+#recently-played-heading .artist-heading-h4{
+	margin-left: 8rem;
+	font-size: 2rem;
+	color: red;
+}
+#recently-played-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.recently-played-block{
+	justify-content: start;
+}
+.recently-played-block .image{
+	height: 155px;
+	width: 155px;
+}
+.songname-artist h3{
+	font-size: 2.3rem;
+}
+.songname-artist h4{
+	font-size: 2rem;
+}
+.i-time{
+	font-size: 2rem;
+	margin-left: 5rem;
+}
+#recently-played-heading a:hover{
+	color: white;
+}
+#middle-section-list li .lists-block{
+	display: flex;
+	height: 10rem;
+	width: 65rem;
+	margin-top: 1.5rem;
+    background-color: #0b1a20;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+.lists-image{
+	height: 170px;
+	width: 270px;
+	margin-right: 2rem;
+}
+.lists-image img{
+	height: 100%;
+	width: 100%;
+}
+.lists-block h2{
+    margin-top: -0.1rem;
+    font-size: 2.5rem;
+}
+.lists-block .else{
+	margin-top: 4rem;
+	margin-left: -6rem;
+	font-size: 1.8rem;
+}
+.lists-block .time{
+	margin-left: 7rem;
+	margin-top: 0rem;
+	font-size: 1.8rem;
+}
+.lists-block .heart{
+	margin-left: 15rem;
+}
+.lists-block i{
+	margin-top: 1rem;
+	/*margin-left: 2rem;*/
+	font-size: 1.8rem;
+}
+#middle-section li:hover{
+	/*background-color: #202324;*/
+	background-color: #32393c;
+	color: skyblue;
+}
+aside{
+	width: 25%;
+	margin-left: 7rem;
+	margin-top: 4rem;
+}
+#bottom-player{
+	display: none;
+}
+}
+/* MEDIA QUERIES FOR 900 */
+@media only screen and (max-width: 900px){
+body{
+	margin: 0px;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+    width: 302vw;
+    height: 25rem;
+}
+#nav-outer{
+	width: 302vw;
+	height: 25rem;
+}
+#nav-left{
+	width: 151vw;
+}
+#nav-right{
+	width: 151vw
+	justify-content: start;
+}
+#navigation-logo{
+    height: 180px;
+    width: 180px;
+    margin-top: 5.5rem;
+    margin-left: 7rem;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 8rem;
+	top: 7rem;
+	left: 7rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text p{
+	color: white;
+	font-family: cursive;
+	font-size: 3.5rem;
+	margin-top: 13rem;
+	margin-left: 6rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+}
+#navigation-search{
+	height: 4rem;
+	width: 29rem;
+	margin-top: 12rem;
+	display: none;
+}
+/* NAVIGATION - SEARCH TAG */
+#nav-search{
+	font-size: 1.8rem;
+}
+#nav-search i{
+	margin-top: 1.2rem;
+	margin-left: 1rem;
+}
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    font-size: 2rem;
+}
+/* MICROPHONE */
+#microphone i{
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    margin-left: -1rem;
+} 	
+/* NOTIFICATIONS */
+#notifications{
+	margin-top: 12.5rem;
+	display: none;
+}
+#notifications #bell{
+	font-size: 3rem;
+	padding-left: 2rem;
+	margin-left: 3rem;
+}
+#notifications #circle{
+	left: 6.5rem;
+    font-size: 0.9rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+    margin-top: 12rem;
+    height: 75px;
+    width: 75px;
+    margin-left: 7rem;
+    display: none;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	display: inline-block;
+	font-size: 7rem;
+	margin-top: 10rem;
+    margin-left: 20rem;
+	color: white;
+}
+#nav-hamburger-icon{
+	height: 30rem;
+	width: 30rem;
+	/*border: 2px solid white;*/
+	display: none;
+}
+#nav-hamburger-icon h4{
+	font-size: 3.2rem;
+	font-family: sans-serif;
+}
+#nav-hamburger-icon h4 i{
+	font-size: 3.2rem;
+}
+#nav-hamburger-icon i{
+	margin-right: 2rem;
+}
+#hamburger-icon:hover #nav-hamburger-icon{
+    display: inline-block;
+}
+aside{
+	width: 25%;
+	margin-left: 6rem;
+	margin-top: 5rem;
+}
+#left-img{
+	margin-top: 3rem;
+}
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+	font-size: 2rem;
+	margin-top: 0px;
+	/*word-spacing: 0.2rem;*/
+	width: 140%;
+}
+#right-text #name-followers h1{
+        font-size: 2rem;
+}
+#right-text #name-followers h4{
+        font-size: 1.6rem;
+        width: 10rem;
+ }
+#band-info h4{
+         font-size: 1.5rem;
+ }
+#play-follow button{
+	width: 10.5rem;
+	height: 5.5rem;
+    background: linear-gradient(to right,red,yellow);
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 10%;
+    font-size: 1.5rem;
+} 
+#play-follow a{
+	margin-left: 4rem;
+	margin-top: -0.8rem;
+	text-decoration: none;
+	font-size: 2rem;
+}
+#play-follow h3{
+	font-size: 2rem;
+}
+#tracks-albums h4{
+	font-size: 1.5rem;
+}
+#play-follow button:hover {
+	color: white;
+}
+#play-follow a:hover{
+	color: white;
+}
+#similar-artist{
+	width: 65rem;
+}
+#similar-artist-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 3rem;
+	width: 100%;
+}
+#similar-artist-heading .artist-heading-h4{
+	/*margin-left: 8rem;*/
+	font-size: 2rem;
+	margin-top: 1.5rem;
+	color: red;
+}
+#similar-artist-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.similar-artist-block{
+	justify-content: start;
+}
+.similar-artist-block .image{
+	height: 155px;
+	width: 155px;
+}
+.songname-artist h3{
+	font-size: 2.3rem;
+}
+.songname-artist h4{
+	font-size: 2rem;
+}
+.i-time{
+	font-size: 2rem;
+	margin-left: 5rem;
+}
+#similar-artist-heading a:hover{
+	color: white;
+}
+#recently-played{
+	width: 65rem;
+}
+#recently-played-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 3rem;
+	margin-top: 2.5rem;
+	width: 100%;
+}
+#recently-played-heading .artist-heading-h4{
+	margin-left: 8rem;
+	font-size: 2rem;
+	color: red;
+}
+#recently-played-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+.recently-played-block{
+	justify-content: start;
+}
+.recently-played-block .image{
+	height: 155px;
+	width: 155px;
+}
+.songname-artist h3{
+	font-size: 2.3rem;
+}
+.songname-artist h4{
+	font-size: 2rem;
+}
+.i-time{
+	font-size: 2rem;
+	margin-left: 5rem;
+}
+#recently-played-heading a:hover{
+	color: white;
+}
+#middle-section-list li .lists-block{
+	display: flex;
+	height: 11rem;
+	width: 70rem;
+	margin-top: 1.5rem;
+    background-color: #0b1a20;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+.lists-image{
+	height: 190px;
+	width: 300px;
+	margin-right: 2rem;
+}
+.lists-image img{
+	height: 100%;
+	width: 100%;
+}
+.lists-block h2{
+    margin-top: -0.1rem;
+    font-size: 2.5rem;
+}
+
+.lists-block .else{
+	margin-top: 3.5rem;
+	margin-left: -7rem;
+	font-size: 2rem;
+}
+.lists-block .time{
+	margin-left: 7rem;
+	margin-top: 0rem;
+	font-size: 2rem;
+}
+.lists-block .heart{
+	margin-left: 15rem;
+}
+.lists-block i{
+	margin-top: 1rem;
+	/*margin-left: 2rem;*/
+	font-size: 1.8rem;
+}
+#middle-section li:hover{
+	/*background-color: #202324;*/
+	background-color: #32393c;
+	color: skyblue;
+}
+}
+
+
+
+
+/* MEDIA QUERIES FOR 768 PX */
+@media only screen and (max-width: 768px){
+
+    body{
+	margin: 0px;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+    width: 302vw;
+    height: 25rem;
+}
+#nav-outer{
+	width: 302vw;
+	height: 25rem;
+}
+#nav-left{
+	width: 151vw;
+}
+#nav-right{
+	width: 151vw;
+	justify-content: start;
+}
+#navigation-logo{
+    height: 180px;
+    width: 180px;
+    margin-top: 5.5rem;
+    margin-left: 7rem;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 8rem;
+	top: 7rem;
+	left: 7rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text p{
+	color: white;
+	font-family: cursive;
+	font-size: 3.5rem;
+	margin-top: 13rem;
+	margin-left: 6rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	display: inline-block;
+	font-size: 7rem;
+	margin-top: 12rem;
+    margin-left: 35rem;
+}
+
+/* MAIN */
+main{
+	width: 100vw;
+}
+/* ARTIST - INFO */
+#artist-info{
+	margin-left: 6rem;
+	margin-top: 6rem;
+	/*border: 3px solid white;*/
+	color: white;
+	width: 150%;
+}
+#left-img{
+	height: 550px;
+	width: 1050px;
+}
+#left-img img{
+	margin-top: 2.5rem;
+	height: 100%;
+	width: 100%;
+}
+#left-img img:hover{
+	transform: scale(1.2);
+}
+#right-text{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-right: 1rem;
+}
+#name-followers{
+	display: flex;
+	margin-left: 2rem;
+}
+#name-followers h1{
+	/*margin-left: 18rem;*/
+	font-size: 2.5rem;
+}
+#name-followers h4{
+	margin-top: 2rem;
+	font-size: 1.8rem;
+}
+#band-info{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+#band-info h4{
+	margin-top: -1rem;
+	font-size: 1.8rem;
+}
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+	font-size:2rem;
+}
+#play-follow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+	font-size: 1.5rem;
+}
+#play-follow button{
+	width: 10.5rem;
+	height: 5.5rem;
+    background: linear-gradient(to right,red,yellow);
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 10%;
+} 
+#play-follow a{
+	margin-left: 4rem;
+	margin-top: -0.8rem;
+	text-decoration: none;
+	font-size: 2.5rem;
+}
+#play-follow h3{
+	font-size: 2rem;
+}
+#right-text #name-followers h4{
+    font-size: 2rem;
+    width: 12rem;
+ }
+#tracks-albums{
+	display: flex;
+	margin-left: 2rem;
+}
+#tracks-albums h4{
+	font-size: 2rem;
+}
+#play-follow button:hover {
+	color: white;
+}
+#play-follow a:hover{
+	color: white;
+}
+/* ASIDE */
+aside{
+	display: inline-block;
+    width: 25%;
+    height:81rem;
+    margin-left: 6rem;
+    /*border: 3px solid white;*/
+    margin-top: 4rem;
+}
+/* SIMILAR ARTISTS */
+#similar-artist{
+	width: 75rem;
+}
+.i-time{
+	margin-top: -5rem;
+	margin-left: 8rem;
+}
+/* RECENTLY PLAYED */
+#recently-played{
+	width: 75rem;
+}
+/* MIDDLE SECTION */
+#middle-section{
+	color: floralwhite;
+	margin-left: 4rem;
+	margin-top: 3rem;
+}
+#middle-section-list li .lists-block{
+	display: flex;
+	height: 12rem;
+	width: 75rem;
+	margin-top: 1.5rem;
+    background-color: #0b1a20;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+	padding-left: 1.5rem;
+}
+.lists-image{
+	height: 190px;
+	width: 320px;
+	margin-right: 2rem;
+}
+.lists-image img{
+	height: 100%;
+	width: 100%;
+}
+.lists-block h2{
+    margin-top: -0.1rem;
+    font-size: 3rem;
+}
+
+.lists-block .else{
+	margin-top: 4rem;
+	margin-left: -9rem;
+	font-size: 2rem;
+}
+.lists-block .time{
+	margin-left: 10rem;
+	margin-top: 0rem;
+	font-size: 2rem;
+}
+.lists-block .heart{
+	margin-left: 15rem;
+}
+.lists-block i{
+	margin-top: 1rem;
+	/*margin-left: 2rem;*/
+	font-size: 2rem;
+}
+#middle-section li:hover{
+	/*background-color: #202324;*/
+	background-color: #32393c;
+	color: skyblue;
+}
+/* FOOTER SECTION */
+/* BOTTOM PLAYER */
+#footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+	display: none;
+}
+}
+
+
+
+
+
+/* MEDIA QUERIES - 572 PX  */
+@media only screen and (max-width: 572px){
+	body{
+	margin: 0px;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+    width: 344vw;
+}
+#nav-outer{
+	width: 344vw;
+}
+#nav-left{
+	width: 172vw;
+}
+#nav-right{
+	width: 172vw;
+	justify-content: center;
+}
+#navigation-logo{
+	margin-top: 7rem;
+	margin-left: 5rem;
+	height: 150px;
+	width: 150px;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 140%;
+	width: 140%;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 8rem;
+	top: 9rem;
+	left: 7.5rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text p{
+	font-size: 4rem;
+	margin-top: 18rem;
+	margin-left: 9rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+#navigation-search{
+	display: none;
+}
+#notifications{
+	display: none;
+}
+#navigation-sign-in{
+	display: none;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	font-size: 7rem;
+	/*margin-top: 8rem;*/
+    /*margin-left: 8rem;*/
+	color: white;
+	position: absolute;
+	top: -2rem;
+	left: 57rem;
+}
+#hamburger-icon>i{
+	display: block;
+}
+/* MAIN */
+main{
+	width: 100vw;
+}
+/* ARTIST - INFO */
+#artist-info{
+	margin-left: 6rem;
+	margin-top: 8rem;
+	/*border: 3px solid white;*/
+	color: white;
+	width: 200%;
+}
+#left-img{
+	height: 750px;
+	width: 1475px;
+}
+#left-img img{
+	margin-top: 8.5rem;
+	height: 100%;
+	width: 100%;
+}
+#left-img img:hover{
+	transform: scale(1.2);
+}
+#right-text{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-right: 1rem;
+}
+#name-followers{
+	display: flex;
+	margin-left: 2rem;
+}
+#name-followers h1{
+	/*margin-left: 18rem;*/
+	font-size: 2.5rem;
+}
+#name-followers h4{
+	margin-top: 2.5rem;
+	font-size: 2rem;
+}
+#right-text #name-followers h4{
+        font-size: 1.8rem;
+        width: 13rem;
+ }
+#band-info{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+}
+#band-info h4{
+	margin-top: -1rem;
+	font-size: 2rem;
+}
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+	font-size: 2.2rem;
+	margin-top: 0px;
+	/*word-spacing: 0.2rem;*/
+	width: 130%;
+	padding-right: 6rem;
+}
+#play-follow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 2rem;
+	font-size: 1.5rem;
+}
+#play-follow button{
+	width: 10.5rem;
+	height: 4.5rem;
+    background: linear-gradient(to right,red,yellow);
+    font-family: sans-serif;
+    border: 0px;
+    border-radius: 10%;
+    font-size: 2rem;
+    font-family: serif;
+} 
+#play-follow a{
+	margin-left: 4rem;
+	margin-top: -2rem;
+	text-decoration: none;
+	/*font-size: 2.5rem;*/
+}
+#play-follow h3{
+	font-size: 2.5rem;
+}
+#tracks-albums{
+	display: flex;
+	margin-left: 2rem;
+}
+#tracks-albums h4{
+	font-size: 2rem;
+	margin-top: -0.2rem;
+}
+#play-follow button:hover {
+	color: white;
+}
+#play-follow a:hover{
+	color: white;
+}
+/* ASIDE */
+aside{
+	display: inline-block;
+    width: 25%;
+    height:81rem;
+}
+/* SIMILAR ARTISTS */
+#similar-artist{
+	width: 75rem;
+}
+.i-time{
+	margin-top: -5rem;
+	margin-left: 8rem;
+}
+/* RECENTLY PLAYED */
+#recently-played{
+	width: 75rem;
+}
+/* MIDDLE SECTION */
+#middle-section{
+	color: floralwhite;
+	margin-left: 4rem;
+	margin-top: 3rem;
+}
+#middle-section-list li .lists-block{
+	display: flex;
+	height: 12rem;
+	width: 75rem;
+	margin-top: 1.5rem;
+    background-color: #0b1a20;
+	padding-top: 0.9rem;
+	/*padding-bottom: 0.5rem;*/
+	padding-left: 1.8rem;
+}
+.lists-image{
+	height: 190px;
+	width: 250px;
+	margin-right: 2rem;
+}
+.lists-image img{
+	height: 100%;
+	width: 100%;
+}
+.lists-block h2{
+    margin-top: 2rem;
+    font-size: 2.8rem;
+}
+.lists-block .else{
+	margin-top: 7rem;
+	margin-left: -8.5rem;
+	font-size: 2rem;
+}
+.lists-block .time{
+	margin-left: 9rem;
+	margin-top: 2.5rem;
+	font-size: 2.3rem;
+}
+.lists-block .heart{
+	margin-left: 15rem;
+}
+.lists-block i{
+	margin-top: 4rem;
+	margin-left: 5rem;
+	font-size: 1.8rem;
+}
+.plus{
+	margin-left: -2rem;
+}
+#middle-section li:hover{
+	/*background-color: #202324;*/
+	background-color: #32393c;
+	color: skyblue;
+}
+/* FOOTER SECTION */
+/* BOTTOM PLAYER */
+#footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+	display: none;
+}
+}
+
+/* MEDIA QUERIES - 400 PX  */
+@media only screen and (max-width: 400px){
+ body{
+	margin: 0px;
+	background-color: #07071a;
+}
+/*main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;	
+}*/
+/* HEADER - NAVIGATION */
+header{
+    width: 344vw;
+}
+#nav-outer{
+	width: 344vw;
+}
+#nav-left{
+	width: 172vw;
+}
+#nav-right{
+	width: 172vw;
+	justify-content: center;
+}
+#navigation-logo{
+	margin-top: 6rem;
+	margin-left: 8rem;
+	height: 180px;
+	width: 180px;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 7.5rem;
+	top: 8rem;
+	left: 4rem;
+}
+/* NAVIGATION - LOGO P */
+#nav-left-text p{
+	font-size: 3rem;
+	margin-top: 9rem;
+	margin-left: 7rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+#navigation-search{
+	display: none;
+}
+#notifications{
+	display: none;
+}
+#navigation-sign-in{
+	display: none;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon{
+	top: -1rem;
+	left: 30rem;
+}
+#nav-hamburger-icon h4{
+	font-size: 2rem;
+}
+#nav-hamburger-icon h4 i{
+	font-size: 2rem;
+}
+ body{
+     background-color: #07071a;
+ }
+#band-info p{
+	text-align: justify;
+	font-family: serif;
+	font-size: 2.2rem;
+	margin-top: 0px;
+	/*word-spacing: 0.2rem;*/
+	width: 150%;
+	padding-right: 6rem;
+}
+aside{
+	display: inline-block;
+    width: 30%;
+    height:81rem;
+}
+#middle-section-list li .lists-block{
+	width: 60rem;
+}
+#similar-artist{
+	width: 63rem;
+}
+/* RECENTLY PLAYED */
+#recently-played{
+	width: 63rem;
+}
+}
+
+
+
+/* MEDIA QUERIES - 375 PX  */
+@media only screen and (max-width: 375px){
+#navigation-logo i{
+	font-size: 7rem;
+	top: 8rem;
+	left: 1rem;
+}
+#hamburger-icon{
+	top: -1rem;
+	left: 18rem;
+}
+#similar-artist{
+	width: 60rem;
+}
+#recently-played{
+	width: 60rem;
+}
+}

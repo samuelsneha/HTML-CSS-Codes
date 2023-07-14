@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title> Dropdown Lists, Textarea and Button </title></head>
+<body>
+<form>
+	<!-- Selecting one option from the list. The options tag has value attribute which you will learn later -->
+  <label> Select the month </label><br>	
+  <select name ="month_selecter">
+   <option> Jan </option>
+   <option> Feb </option>
+   <option selected> Dec </option>
+   <option> September </option>
+  </select> 
+</form>
+
+<form>
+<!-- Selecting multiple options from the list -->
+  <label> Select the month </label><br>	
+  <select name ="month_selecter" multiple>
+   <option> Jan </option>
+   <option> Feb </option>
+   <option> Dec </option>
+   <option> September </option>
+  </select> 
+</form>
+
+<form>
+	<!-- This works without value attribute. Whateveer the user has typed goes into the backend and if the user hasnt typed then it goes as a empty string -->
+	<label> Tell something about yourself </label> <br>
+	<textarea name ="description" rows="10" cols="50"> </textarea>
+</form>
+
+<form method="get">
+	<!-- This button just does the work of clicking, it doesnt send data to the backend. Once it is clicked, we can make it work using javascript -->
+	<input type = "button" value = "Input tag with type attribute as button">
+</form>
+
+<form>
+	<!-- Button type submit- sends the all the data of that particular form - input type submit. The submit should be inside that form, so it is able to send without value attribute. Else if you keep that submit outside the form and u want to send the data without value attribute then you will have to use the id of that particular form -->
+   <button type="submit"> Button Tag with type attribute as submit </button><br>
+   <!-- This button just does the work of clicking, it doesnt send data to the backend. Once it is clicked, we can make it work using javascript-->	
+   <button type="button"> Button Tag with type attribute as button </button><br>	
+   <button onclick="alert('Learn HTML')"> Click Me </button><br>
+   <button type="reset"> Button Tag with type attribute as reset </button><br>	
+   <button type="submit"> <img src="Image 1.jpg" height = "250px" width="200px"> </button>
+   <button type="button"> <img src="Image 1.jpg" height = "250px" width="200px"> </button>	
+   <button type="reset"> <img src="Image 1.jpg" height = "250px" width="200px"> </button>
+   <!--  same as submit. Reset is inside whichever form, it resets the values of that form. It has nothing to do with sending values to the backend. And if suppose reset is outside a particular form, then we have to use id of that particular form, whose values we want to reset.  -->
+</form>
+</body>
+</html>

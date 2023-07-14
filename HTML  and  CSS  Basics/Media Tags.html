@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title> Media Tags </title><head> 
+<body>
+ <audio src = " Recording 1.m4a " controls>  </audio><br>
+ <audio controls>
+ <source src=" Recording 1.m4a" type="audio/m4a"><br>
+ <source src="Recording 1.mp3" type=" audio/mp3"> 
+ </audio>
+ <BR><br>
+ <!-- Among all the source tags, only the FIRST one which is supported by the browser will be displayed. All source tags wont be displayed, only ONE will be displayed among them. -->
+<!-- The above same is for videos. The only difference is you have to use audio in place of videos and you can adjust size of videos using height and width attribute inside video tag -->
+<!--  Browser doesnt support this format	. This text is supported only in video tags, in audio tags its not allowed. In audio tag, that audio will be disabled if its not supported -->
+ <video src = " Video 1.mp4 " height="200" width="200" controls>  </video><br>
+ <video height="200" width="200" controls>
+ <source src=" Video 1.mp4" type="video/mp4" ><br>
+ <source src=" Video 1.wmv" type=" video/wmv"><br> 
+ </video>
+ <br><br>
+ <video src = " Video 1.mp4 " height="200" width="200" controls>  </video><br>
+ <video height="200" width="200" controls>	
+ <source src="Video 1.mkv" type="video/mkv">
+ <p>Browser doesnt support this format</p> 	
+ </video>
+<figure>
+	<img src="Image 1.jpg">
+	<figcaption> This image is created using figure tag </figcaption>
+</figure>
+
+</body>
+</html> 

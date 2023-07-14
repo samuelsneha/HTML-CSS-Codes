@@ -1,0 +1,2358 @@
+/* HEADER - NAVIGATION */
+header{
+	position: sticky;
+	top: 0px;
+	background-color: black;
+	z-index: 100;
+}
+nav{
+	display: flex;
+}
+/* NAVIGATION - LOGO */
+#navigation-logo{
+    margin-left: 50px;
+    margin-top: 25px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 40%;
+	border: 25px double red;
+}
+/* NAVIGATION - LOGO P */
+#navigation-logo div p{
+	position: absolute;
+	top: -1rem;
+	left: 15rem;
+	color: white;
+	font-family: cursive;
+	font-size: 2rem;
+	width: 17rem;
+
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 4.5rem;
+	color: #83f73b;
+	position: absolute;
+	top: 4rem;
+	left: 3rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+
+/* NAVIGATION - SEARCH  */
+#navigation-search{
+	display: flex;
+	position: relative;
+}
+
+/* NAVIGATION - TEXT - I */
+#navigation-text-i{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	height: 35%;
+	width: 25rem;
+	/*border: 2px solid white;*/
+	position: absolute;
+	top: 46px;
+	left: 550px;
+	background-color: #1c0d36;
+	border-radius: 0.9rem;
+}
+/* NAVIGATION - TEXT (FORM) */
+
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    color: lightgray;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border: 0;
+    background-color: transparent;
+    padding-top: 0.3rem;
+    border-color: transparent;
+    margin-top: -1px;
+}
+/* NAVIGATION - ITAG */
+#navigation-itag{
+	font-size: 1.5rem;
+	color: lightgray;
+	position: relative;
+}
+#navigation-itag i{
+	position: absolute;
+    left: -2.5rem;
+    top: -1.6rem;
+    margin-left: 5px;
+}
+/* MICROPHONE */
+#microphone{
+	position: relative;
+}
+#microphone i{
+font-size: 1.8rem;
+    color: lightgray;
+    position: absolute;
+    top: -2rem;
+    left: 18.5rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	position: relative;
+}
+#notifications #bell{
+	color: lightgray;
+	font-size: 1.8rem;
+    position: absolute;
+    top: 3rem;
+    left: 62rem;
+}
+#notifications #circle{
+	position: absolute;
+	top: 3rem;
+	left: 63rem;
+    color: red;
+    font-size: 0.8rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+	height: 40px;
+	width: 40px;
+	position: relative;
+	background-color: transparent;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 67rem;
+	top: 2.2rem;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon i{
+	display: none;
+}
+
+
+
+/* POPULAR ARTISTS - CONTENT */
+#popular-artists-content{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    font-family: serif;
+    color: floralwhite;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+#popular-artists-content .artist{
+	width: 8rem;
+	margin-left: 3rem;
+}
+.artist img{
+	height: 100%;
+	width: 100%;
+	border-radius: 30%;
+	position: relative;
+}
+.artist h3{
+	margin-left: 1rem;
+	color: floralwhite;
+	font-family: serif;
+	width: 100%;
+}
+.artist i{
+	position: absolute;
+	top: 83rem;
+	left: 11rem;
+	z-index: 2;
+	color: lightgray;
+	font-size: 2rem;
+	display: none;
+}
+.artist a:hover img{
+    transform: scale(2.0);  
+    box-shadow: 0px 0px 3px 3px lightgray; 
+    z-index: 2;
+}
+
+
+
+ /*MEDIA QUERIES FOR 1440 PX 
+@media only screen and (max-width: 1440px){
+
+	 THEMED SONGS 
+THEMED SONGS - HEADING 
+#themedsongs-headings{
+	display: flex;
+}
+#themedsongs-headings h2{
+    margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 2rem;
+    margin-right: -2rem;
+}
+ THEMED SONGS - CONTENT 
+#themedsongs-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;  
+}
+.themedsong{
+    width: 20rem;
+    height: 15rem;
+	margin-left: 4rem;
+	margin-top: 2rem;
+	text-decoration: none;
+}
+.themedsong img{
+	height: 100%;
+	width: 100%;
+	border: 5px ridge white;
+} 
+.themedsong a{
+	text-decoration: none;
+}
+.themed-text{
+	margin-top: -10rem;
+    margin-left: 6rem;
+	font-family: serif;
+	font-size: 2.5rem;
+	color: black;
+}
+.themed-text:hover{
+ transform: skew(20deg);
+ color: #f1002c;
+}
+.themedsong img:hover{
+    animation: changeShape 1.5s infinite ease-out normal;
+    transform: rotate(45deg);
+}
+
+@keyframes changeShape{
+    0%{
+    	border-radius: 20%;
+    }
+    50%{
+    	border-radius: 50%;
+    }
+    75%{
+    	border-radius: 80%;
+    }
+}
+
+
+ FOOTER SECTION 
+ BOTTOM PLAYER 
+#footer-section{
+	margin-top: 8rem;
+	color: floralwhite;
+	display: flex;
+}
+#bottom-player{
+	height: 10rem;
+	background-color:#424242;
+    width: fit-content;
+    display: flex;
+    padding-top: 1rem;
+}
+#left{
+	justify-self: start;
+	display: flex;
+}
+#center{
+	margin-top: 4rem;
+	margin-left: -23rem;
+}
+#right{
+	justify-self: end;
+}
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i{
+	margin-left: 2rem;
+}
+#left #author-i #author{
+	font-size: 1.1rem;
+}
+#left #left-i{
+	display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+#left #left-i>i{
+	margin-right: 1rem;
+}
+#right i{
+	margin-left: 1rem;
+}
+#right #center-range{
+	margin-top: -1rem;
+}
+#right input{
+	margin-left: 8rem;
+	margin-top: -1rem;
+	margin-right: 2.5rem;
+}
+
+}*/
+
+
+
+
+
+/* MEDIA QUERIES FOR 1000 PX */
+@media only screen and (max-width: 1000px){
+    
+    body{
+	margin: 0px;
+	background-color: #000000;
+}
+main section:nth-child(2n){
+	background-color: #0b1a20;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+/* HEADER - NAVIGATION */
+header{
+	position: sticky;
+	top: 0px;
+	background-color: black;
+	z-index: 100;
+}
+nav{
+	display: flex;
+}
+/* NAVIGATION - LOGO */
+#navigation-logo{
+    margin-left: 70px;
+    margin-top: 45px;
+    height: 75px;
+    width: 75px;
+    position: relative;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 40%;
+	border: 25px double red;
+}
+/* NAVIGATION - LOGO P */
+#navigation-logo div p{
+	position: absolute;
+	top: -1rem;
+	left: 15rem;
+	color: white;
+	font-family: cursive;
+	font-size: 2rem;
+	width: 17rem;
+
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 4.5rem;
+	color: #83f73b;
+	position: absolute;
+	top: 4rem;
+	left: 3rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.5);
+	color: pink !important;
+} 
+
+/* NAVIGATION - SEARCH  */
+#navigation-search{
+	display: flex;
+	position: relative;
+}
+
+/* NAVIGATION - TEXT - I */
+#navigation-text-i{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	height: 35%;
+	width: 25rem;
+	/*border: 2px solid white;*/
+	position: absolute;
+	top: 46px;
+	left: 550px;
+	background-color: #1c0d36;
+	border-radius: 0.9rem;
+}
+/* NAVIGATION - TEXT (FORM) */
+
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    color: lightgray;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    border: 0;
+    background-color: transparent;
+    padding-top: 0.3rem;
+    border-color: transparent;
+    margin-top: 8px;
+}
+/* NAVIGATION - ITAG */
+#navigation-itag{
+	font-size: 1.5rem;
+	color: lightgray;
+	position: relative;
+}
+#navigation-itag i{
+	position: absolute;
+    left: -1.4rem;
+    top: -1.7rem;
+    margin-left: 5px;
+}
+/* MICROPHONE */
+#microphone{
+	position: relative;
+}
+#microphone i{
+font-size: 1.8rem;
+    color: lightgray;
+    position: absolute;
+    top: -2rem;
+    left: 18.5rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	position: relative;
+}
+#notifications #bell{
+	color: lightgray;
+	font-size: 1.8rem;
+    position: absolute;
+    top: 3.9rem;
+    left: 62rem;
+}
+#notifications #circle{
+	position: absolute;
+	top: 4rem;
+	left: 63rem;
+    color: red;
+    font-size: 0.8rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+	height: 50px;
+	width: 50px;
+	position: relative;
+	background-color: transparent;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 67rem;
+	top: 3rem;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon i{
+	display: none;
+}
+/* MAIN */
+main{
+	width: 70%;
+	/*overflow-y: scroll;
+	height: 70vh;*/
+}
+/* SECTION - CAROUSEL */
+#carousel{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	margin-top: 5rem;
+	position: relative;
+}
+#maindiv{
+	max-width: 85%;
+	max-height:35%;
+	width: 49rem;
+	height: 25rem;
+	background-image: url('Logo.jpg');
+	background-size: cover;
+	animation: slideshow 9s infinite linear;
+	margin-left: 10rem;
+}
+@keyframes slideshow{
+	0%{
+        background-image: url('Logo.jpg');
+	}
+	35%{
+        background-image: url('Sneha_Samuel_Photo_1.jpg');
+	}
+	75%{
+        background-image: url('Macbook Mouse BG Image.jpg');
+	}
+} 
+/* /MAIN  */
+
+/* ASIDE */
+aside{
+	display: flex;
+	float: right;
+    width: 20%;
+    /*max-height: 65vh;*/
+    /*width: 28rem;*/
+    height: 45rem;
+    position: absolute;
+    top: 10rem;
+    left: 55rem;
+    /*border: 3px solid green;*/
+    	/*position: sticky;*/
+	/*top: 0px;*/
+	/*background-color: black;*/
+	/*z-index: 100;*/
+}
+
+/* ASIDE SECTION */
+#aside-section{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+#aside-heading{
+	display: flex;
+	justify-content: space-around;
+}
+#aside-heading h2{
+    font-family: serif;
+    font-size: 3.5rem;
+    color: floralwhite;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+#aside-heading-dropdown{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    font-family: serif;
+}
+#aside-heading-dropdown select{
+	height: 4rem;
+	width: 18rem;
+	background-color: transparent;
+	border: 0px transparent;
+    font-family: serif;
+    font-size: 2rem;
+    text-align: center;
+    color: floralwhite;
+}
+#aside-heading-dropdown option{
+	height: 2.5rem;
+	width: 3rem;
+	background-color: transparent;
+	color: black;
+	font-size: 1rem;
+	font-family: serif;
+}
+#aside-heading-dropdown:hover select{
+    color: lightgray;
+}
+/* ASIDE SECTION - CONTENT */
+#aside-content{
+	display: flex;
+}
+#aside-content-list{
+	width: 24rem;
+	/*overflow-y: scroll;
+	height: 40rem;*/
+	position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 1rem;
+}
+#aside-content-list li{
+	margin-bottom: 4rem;
+}
+#aside-content-list img{
+	max-height: 55px;
+	max-width: 55px;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-bottom: -1rem;
+	margin-right: 2rem;
+	border-radius: 30%;
+}
+#aside-content-list p{
+	display:inline-block;
+}
+.twop{
+	margin-top: 0rem;
+    margin-left: 6.5rem;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.firstp{
+	font-size: 1.6rem;
+	font-family: serif;
+	margin-top: -2rem;
+	/*margin-bottom: 1rem;*/
+}
+.secondp{
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	vertical-align: bottom;
+	margin-left: 0rem;
+	margin-top: -1.5rem;
+}
+.aside-itag{
+	margin-top: -3.5rem;
+}
+#aside-content-list i{
+	margin-left: 18rem;
+	font-size: 1.5rem;
+	color: lightgray;
+}
+#aside-content li:hover p{
+    color: white;
+}
+#aside-content #aside-content-list i:hover{
+	color: red;
+}
+/* ASIDE */
+aside{
+	display: flex;
+	float: right;
+    /*width: 0%;*/
+    /*max-height: 65vh;*/
+    /*width: 28rem;*/
+    height: 45rem;
+    position: absolute;
+    top: 10rem;
+    left: 55rem;
+    /*border: 3px solid green;*/
+    	/*position: sticky;*/
+	/*top: 0px;*/
+	/*background-color: black;*/
+	/*z-index: 100;*/
+}
+
+/* ASIDE SECTION */
+#aside-section{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+#aside-heading{
+	display: flex;
+	justify-content: space-around;
+}
+#aside-heading h2{
+    font-family: serif;
+    font-size: 2.4rem;
+    color: floralwhite;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+#aside-heading-dropdown{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    font-family: serif;
+}
+#aside-heading-dropdown select{
+	height: 4rem;
+	width: 18rem;
+	background-color: transparent;
+	border: 0px transparent;
+    font-family: serif;
+    font-size: 2rem;
+    text-align: center;
+    color: floralwhite;
+}
+#aside-heading-dropdown option{
+	height: 2.5rem;
+	width: 3rem;
+	background-color: transparent;
+	color: black;
+	font-size: 1.2rem;
+	font-family: serif;
+}
+#aside-heading-dropdown:hover select{
+    color: lightgray;
+}
+/* ASIDE SECTION - CONTENT */
+#aside-content{
+	display: flex;
+}
+#aside-content-list{
+	width: 24rem;
+	/*overflow-y: scroll;
+	height: 40rem;*/
+	position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 1.2rem;
+}
+#aside-content-list li{
+	margin-bottom: 4rem;
+}
+#aside-content-list img{
+	max-height: 72px;
+	max-width: 72px;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-bottom: -1rem;
+	margin-right: 2rem;
+	border-radius: 30%;
+}
+#aside-content-list p{
+	display:inline-block;
+}
+.twop{
+	margin-top: -1.4rem;
+    margin-left: 7.3rem;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.firstp{
+	font-size: 1.5rem;
+	font-family: serif;
+	margin-top: -2rem;
+	/*margin-bottom: 1rem;*/
+}
+.secondp{
+	font-size: 1.6rem;
+	font-family: serif;
+	vertical-align: bottom;
+	margin-left: 0rem;
+	margin-top: -1.5rem;
+}
+.aside-itag{
+	margin-top: -5rem;
+}
+#aside-content-list i{
+	margin-left: 18rem;
+	font-size: 1.8rem;
+	color: lightgray;
+}
+#aside-content li:hover p{
+    color: white;
+}
+#aside-content #aside-content-list i:hover{
+	color: red;
+}
+/* LATEST RELEASE - HEADING */
+#latest-release-heading h2{
+    margin-left: 7.5rem;
+    margin-top: 5rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 2.5rem;
+}
+/* LATEST RELEASE - CONTENT */
+#latest-release-content{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: start;
+    align-items: center;
+    margin-left: 4rem;
+    height: 25rem;
+    width: 55rem;
+    /*border: 2px solid white;*/
+    font-family: serif;
+    color: floralwhite;
+}
+.one{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 3rem;
+	position: relative;
+}
+.image{
+	height: 150px;
+	width: 150px;
+}
+.image img{
+	height: 100%;
+	width: 100%;
+}
+.textanddate{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+.textanddate h3{
+	font-size: 1.3rem;
+}
+.iandtime{
+	margin-top: -2rem;
+	margin-left: 2rem;
+}
+/*.iandtime>h3{
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}*/
+#latest-release-content button{
+    background-color: transparent;    
+    border: 0px;
+    color: lightgray;
+}
+.class-clickbox{
+	display: none;
+	height: 15rem;
+	width: 12rem;
+	/*border: 2px solid white;*/
+	color: lightgray;
+	background-color: black;
+	font-family: sans-serif;
+	margin-bottom: 2rem;
+	position: absolute;
+	z-index: 3;
+	top: 7rem;
+	right: -2rem;
+}
+.display-flex{
+	display: flex;
+	justify-content: start;
+	vertical-align: middle;
+}
+.iandtime:hover .class-clickbox{
+    display: block;
+
+}
+
+/* POPULAR ARTISTS */
+/* POPULAR ARTISTS - HEADING */
+#popular-artists-heading h2{
+    margin-left: 7.5rem;
+    margin-top: 3rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 2.5rem; 
+    margin-bottom: 2.5rem;  
+}
+/* POPULAR ARTISTS - CONTENT */
+#popular-artists-content{
+	width: 75%;
+	display: flex;
+	margin-left: 4rem;
+	justify-content: space-evenly;
+}
+#popular-artists-content .artist{
+	height: 11rem;
+	width: 8rem;
+}
+.artist img{
+	height: 100%;
+	width: 100%;
+	border-radius: 58%;
+	position: relative;
+}
+.artist h3{
+	margin-left: 1rem;
+	color: floralwhite;
+	font-family: serif;
+	width: 100%;
+	font-size: 1.3rem;
+}
+.artist i{
+	position: absolute;
+	top: 83rem;
+	left: 11rem;
+	z-index: 2;
+	color: lightgray;
+	font-size: 2rem;
+	display: none;
+}
+#topsongs-heading a{
+	font-size: 1.2rem;
+}
+.artist a:hover img{
+    transform: scale(2.0);  
+    box-shadow: 0px 0px 3px 3px lightgray; 
+    z-index: 2;
+}
+/* TOP 20 SONGS */
+/* TOP SONGS - HEADING */
+#topsongs-heading {
+    display: flex;
+}
+#topsongs-heading h2{
+	margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 2rem;
+    margin-right: -2rem;
+}
+#topsongs-heading a{
+	margin-left: 25rem;
+    margin-top: 7rem;
+    font-family: serif;
+    color: red;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+/* TOP SONGS - CONTENT */
+#topsongs-content{
+	display: flex;
+	margin-left: 1rem;
+}
+.song{
+    max-height: 150px;
+	max-width: 150px;
+	margin-top: 1rem;
+	margin-left: 3rem;
+	margin-bottom: 8rem;
+}
+.song img{
+	height: 100%;
+	width: 100%;
+	margin-left: 3rem;
+	border-radius: 30%;
+	box-shadow: 1px 3px 5px 5px lightgoldenrodyellow;
+}
+.song-name{
+    margin-left: 4.5rem;
+    margin-right: -2rem;
+    color: floralwhite;
+}
+.song-artist{
+	margin-left: 5rem;
+	font-family: sans-serif;
+	margin-right: -4rem;
+	font-size: 1rem;
+	margin-top: -1rem;
+	color: floralwhite;
+}
+
+.song-name-i i{
+	/*display: none;*/
+	margin-left: 12rem;
+	color: lightgray;
+}
+#song-optionsbox{
+	display: none;
+	height: 6.5rem;
+	width: 12rem;
+	/*border: 2px solid black;*/
+	color: lightgray;
+	background-color: transparent;
+	font-family: sans-serif;
+	margin-bottom: 2rem;
+}
+#song-optionsbox i{
+	margin-right: 1rem;
+}
+.song:hover #song-optionsbox{
+    display: inline;
+    background-color: green;
+}
+/* THEMED SONGS */
+/* THEMED SONGS - HEADING */
+#themedsongs-headings{
+	display: flex;
+}
+#themedsongs-headings h2{
+    margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 2.5rem;
+    margin-right: -2rem;
+}
+/* THEMED SONGS - CONTENT */
+#themedsongs-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
+	margin-bottom: 4rem;
+}
+.themedsong{
+    width: 20rem;
+    height: 15rem;
+	margin-left: 4rem;
+	margin-top: 2rem;
+	text-decoration: none;
+}
+.themedsong img{
+	height: 100%;
+	width: 100%;
+	border: 5px ridge white;
+} 
+.themedsong a{
+	text-decoration: none;
+}
+.themed-text{
+	margin-top: -10rem;
+    margin-left: 6rem;
+	font-family: serif;
+	font-size: 2.5rem;
+	color: black;
+}
+.themed-text:hover{
+ transform: skew(20deg);
+ color: #f1002c;
+}
+.themedsong img:hover{
+    animation: changeShape 1.5s infinite ease-out normal;
+    /*transform: rotate(45deg);*/
+}
+
+@keyframes changeShape{
+    0%{
+    	border-radius: 20%;
+    }
+    50%{
+    	border-radius: 50%;
+    }
+    75%{
+    	border-radius: 80%;
+    }
+}
+/* FOOTER SECTION */
+/* BOTTOM PLAYER */
+#footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+}
+#bottom-player{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 10rem;
+	background-color:#424242;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	margin-top: 25rem;
+	width: fit-content;
+}
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i #song-name{
+	margin-left: 18rem;
+	margin-top: -7rem;
+}
+#left #author-i #author{
+	margin-left: 18rem;
+	font-size: 1.1rem;
+}
+#left #left-i{
+    margin-left: 26rem;
+    margin-top: -6rem;
+}
+#left #left-i i{
+	margin-top:-3rem;
+	margin-left: 1rem;
+}
+#center #center-i {
+    margin-top: -1rem;
+    margin-left: 33rem;
+} 
+#center #center-i i{
+	margin-left: 3rem;
+	font-size: 1.5rem;
+}
+#center #center-range{
+    margin-left: 29rem;
+}
+#center #center-range input{
+	width: 38rem;
+    margin-top: 1rem;
+}
+#right{
+	margin-left: 65rem;
+	margin-top: -4rem;
+}
+#right i{
+	margin-left: 1rem;
+}
+#right #center-range{
+	margin-top: -1rem;
+}
+#right input{
+	margin-left: 8rem;
+	margin-top: -1rem;
+	margin-right: 2.5rem;
+}
+
+}
+
+
+
+#aside-content{
+	display: flex;
+}
+#aside-content-list{
+	width: 24rem;
+	/*overflow-y: scroll;
+	height: 40rem;*/
+	position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 1rem;
+}
+#aside-content-list li{
+	margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*		body{
+	width: 100%;
+	margin: 0px;
+	background-color: #000000;
+}*/
+/* HEADER - NAVIGATION */
+nav{
+	display: flex;
+}
+/* NAVIGATION - LOGO */
+#navigation-logo{
+    margin-left: 100px;
+    margin-top: 70px;
+    height: 175px;
+    width: 175px;
+    position: relative;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 40%;
+	border: 25px double red;
+}
+/* NAVIGATION - LOGO P */
+#navigation-logo div p{
+	position: absolute;
+	top: 2rem;
+	left: 23rem;
+    font-size: 3.5rem;
+    width: 35rem;
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 9rem;
+	color: #83f73b;
+	position: absolute;
+	top: 7rem;
+	left: 7rem;
+}
+.navigation-logo:hover i{
+	transform: scale(1.6);
+	color: pink !important;
+} 
+
+/* NAVIGATION - SEARCH  */
+#navigation-search{
+	display: none;
+	position: relative;
+	margin-left: -2rem;
+	top: 1rem;
+}
+
+/* NAVIGATION - TEXT - I */
+#navigation-text-i{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	height: 35%;
+	width: 25rem;
+	/*border: 2px solid white;*/
+	position: absolute;
+	top: 40px;
+	left: 550px;
+	background-color: #1c0d36;
+	border-radius: 0.9rem;
+}
+/* NAVIGATION - TEXT (FORM) */
+
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    color: lightgray;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border: 0;
+    background-color: transparent;
+    padding-top: 0.3rem;
+    border-color: transparent;
+    margin-top: 5px;
+}
+/* NAVIGATION - ITAG */
+#navigation-itag{
+	font-size: 1.5rem;
+	color: lightgray;
+	position: relative;
+}
+#navigation-itag i{
+	position: absolute;
+    left: -2.5rem;
+    top: -1.6rem;
+    margin-left: 5px;
+}
+/* MICROPHONE */
+#microphone{
+	position: relative;
+}
+#microphone i{
+font-size: 1.8rem;
+    color: lightgray;
+    position: absolute;
+    top: -2rem;
+    left: 18.5rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	position: relative;
+	display: none;
+}
+#notifications #bell{
+	color: lightgray;
+	font-size: 1.8rem;
+    position: absolute;
+    top: 3rem;
+    left: 62rem;
+}
+#notifications #circle{
+	position: absolute;
+	top: 3rem;
+	left: 63rem;
+    color: red;
+    font-size: 0.8rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+	height: 55px;
+	width: 55px;
+	position: relative;
+	background-color: transparent;
+	display: none;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 67rem;
+	top: 2rem;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon>i{
+	display: flex;
+	color: white;
+	font-size: 5rem;
+	position: relative;
+	top: 5rem;
+	left: 50rem;
+}
+#nav-hamburger-icon h4 i{
+	color: white;
+	font-size: 2rem;
+}
+#nav-hamburger-icon{
+    display: inline-block;
+    /*height: 5rem;*/
+    width: 14rem;
+    border: 2px solid white;
+    color: white;
+    position: relative;
+    left: 50rem;
+    top: 5rem;
+    font-family: serif;
+    font-size: 1.9rem;
+    z-index: 2;
+}
+#hamburger-icon:hover #nav-hamburger-icon{
+     display: inline;
+}
+/* ASIDE */
+aside{
+	display: flex;
+	float: right;
+    /*max-width: 40%;*/
+    /*max-height: 65vh;*/
+    /*width: 28rem;*/
+    height: 50rem;
+    position: absolute;
+    top: 35rem;
+    left: 55rem;
+    /*border: 3px solid green;*/
+    	/*position: sticky;*/
+	/*top: 0px;*/
+	/*background-color: black;*/
+	/*z-index: 100;*/
+}
+
+/* ASIDE SECTION */
+#aside-section{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+}
+#aside-heading{
+	display: flex;
+	justify-content: space-around;
+}
+#aside-heading h2{
+    font-family: serif;
+    font-size: 3rem;
+    color: floralwhite;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+#aside-heading-dropdown{
+    margin-left: 1rem;
+    margin-right: 2rem;
+    font-family: serif;
+}
+#aside-heading-dropdown select{
+	height: 4rem;
+	width: 18rem;
+	background-color: transparent;
+	border: 0px transparent;
+    font-family: serif;
+    font-size: 3rem;
+    text-align: center;
+    color: floralwhite;
+}
+#aside-heading-dropdown option{
+	height: 2.5rem;
+	width: 3rem;
+	background-color: transparent;
+	color: black;
+	font-size: 1.2rem;
+	font-family: serif;
+}
+#aside-heading-dropdown:hover select{
+    color: lightgray;
+}
+/* ASIDE SECTION - CONTENT */
+#aside-content{
+	display: flex;
+}
+#aside-content-list{
+	width: 24rem;
+	/*overflow-y: scroll;
+	height: 40rem;*/
+	position: absolute;
+    top: 5rem;
+    left: 2rem;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 1.2rem;
+}
+#aside-content-list li{
+	margin-bottom: 4rem;
+}
+#aside-content-list img{
+	max-height: 110px;
+	max-width: 110px;
+	display: inline-block;
+	margin-left: 2rem;
+	margin-bottom: -1rem;
+	margin-right: 3rem;
+	border-radius: 30%;
+}
+#aside-content-list p{
+	display:inline-block;
+}
+.twop{
+	margin-top: -3.8rem;
+    margin-left: 10rem;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.firstp{
+	font-size: 2.5rem;
+	font-family: serif;
+	margin-top: -2rem;
+	/*margin-bottom: 1rem;*/
+	margin-right: 1rem;
+}
+.secondp{
+	font-size: 2rem;
+	font-family: serif;
+	vertical-align: bottom;
+	margin-left: 0rem;
+	margin-top: -1.5rem;
+}
+.aside-itag{
+	margin-top: -7.5rem;
+}
+#aside-content-list i{
+	margin-left: 20rem;
+	font-size: 2.5rem;
+	color: lightgray;
+}
+#aside-content li:hover p{
+    color: white;
+}
+#aside-content #aside-content-list i:hover{
+	color: red;
+}
+/* MAIN */
+main{
+	width: 100%;
+/*	overflow-y: scroll;
+	height: 120vh;*/
+}
+/* SECTION - CAROUSEL */
+#carousel{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	margin-top: 5rem;
+	position: relative;
+}
+#maindiv{
+	/*max-width: 60%;*/
+	/*max-height:30%;*/
+	width: 25rem;
+	height: 15rem;
+	background-image: url('Logo.jpg');
+	background-size: cover;
+	animation: slideshow 9s infinite linear;
+	margin-left: 16rem;
+	margin-top: 3rem;
+}
+@keyframes slideshow{
+	0%{
+        background-image: url('Logo.jpg');
+	}
+	35%{
+        background-image: url('Sneha_Samuel_Photo_1.jpg');
+	}
+	75%{
+        background-image: url('Macbook Mouse BG Image.jpg');
+	}
+}
+/* LATEST RELEASE - HEADING */
+#latest-release-heading h2{
+    margin-left: 7.5rem;
+    margin-top: 5rem;
+
+    font-family: serif;
+    color: floralwhite;
+    font-size: 3rem;
+}
+/* LATEST RELEASE - CONTENT */
+#latest-release-content{
+    display: flex;
+    flex-wrap: wrap;
+    /*flex-direction: column;*/
+    justify-content: start;
+    align-items: center;
+    margin-left: 4rem;
+    height: 25rem;
+    width: 55rem;
+    /*border: 2px solid white;*/
+    font-family: serif;
+    color: floralwhite;
+}
+.one{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 3rem;
+	position: relative;
+}
+.image{
+	height: 150px;
+	width: 150px;
+}
+.image img{
+	height: 100%;
+	width: 100%;
+}
+.textanddate{
+      display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: -1rem;
+    font-size: 1.3rem;
+    font-family: serif;
+}
+.iandtime{
+	margin-top: -1rem;
+	margin-left: 2rem;
+	font-size: 1rem;
+	font-family: serif;
+}
+#latest-release-content button{
+    background-color: transparent;    
+    border: 0px;
+    color: lightgray;
+    margin-top: 0.5rem;
+}
+.iandtime .time{
+	margin-top: 5rem;
+}
+.class-clickbox{
+	display: none;
+	height: 15rem;
+	width: 15rem;
+	/*border: 2px solid white;*/
+	color: lightgray;
+	background-color: black;
+	font-family: sans-serif;
+	margin-bottom: 2rem;
+	position: absolute;
+	z-index: 3;
+	top: 7rem;
+	right: -2rem;
+}
+.class-clickbox button{
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+.class-clickbox h3{
+    font-size: 1.3rem;
+}
+.display-flex{
+	display: flex;
+	justify-content: start;
+	vertical-align: middle;
+}
+.iandtime:hover .class-clickbox{
+    display: block;
+}
+
+/* POPULAR ARTISTS */
+/* POPULAR ARTISTS - HEADING */
+#popular-artists-heading h2{
+    margin-left: 7.5rem;
+    margin-top: 3rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 3rem;  
+    margin-bottom: 2.5rem; 
+}
+/* POPULAR ARTISTS - CONTENT */
+#popular-artists-content{
+	width: 100%;
+	display: flex;
+	margin-left: 4rem;
+	margin-bottom: 1.5rem;
+}
+#popular-artists-content .artist{
+	max-height: 200px;
+	max-width: 176px;
+	width: rem;
+	margin-left: 3rem;
+}
+.artist a{
+	width: 10rem;
+	height: 10rem;
+	margin-right: 3.5rem;
+}
+.artist img{
+	height: 100%;
+	width: 100%;
+	border-radius: 30%;
+	position: relative;
+	margin-right: 5rem;
+}
+.artist h3{
+	margin-left: -0.5rem;
+	color: floralwhite;
+	font-family: serif;
+	font-size: 1.8rem;
+	width: 10rem;
+}
+.artist i{
+	position: absolute;
+	top: 83rem;
+	left: 11rem;
+	z-index: 2;
+	color: lightgray;
+	font-size: 2rem;
+	display: none;
+}
+.artist a:hover img{
+    transform: scale(2.0);  
+    box-shadow: 0px 0px 3px 3px lightgray; 
+    z-index: 2;
+}
+/* TOP 20 SONGS */
+/* TOP SONGS - HEADING */
+#topsongs-heading {
+    display: flex;
+    width: 54rem;
+}
+#topsongs-heading h2{
+	margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 3rem;
+    margin-right: -2rem;
+}
+#topsongs-heading a{
+	margin-left: 25rem;
+    margin-top: 7rem;
+    font-family: serif;
+    color: red;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+/* TOP SONGS - CONTENT */
+#topsongs-content{
+	display: flex;
+	margin-left: 1rem;
+}
+.song{
+    max-height: 150px;
+	max-width: 150px;
+	margin-top: 1rem;
+	margin-left: 3rem;
+	margin-bottom: 8rem;
+}
+.song img{
+	height: 100%;
+	width: 100%;
+	margin-left: 3rem;
+	border-radius: 30%;
+	box-shadow: 1px 3px 5px 5px lightgoldenrodyellow;
+}
+.song-name{
+    margin-left: 4.5rem;
+    margin-right: -2rem;
+    color: floralwhite;
+}
+.song-name-i h3{
+	font-size: 1.9rem;
+	margin-left: 3.3rem;
+	width: 15rem;
+}
+.song-name-i i{
+	/*display: none;*/
+	margin-left: 13rem;
+	color: lightgray;
+}
+.song-artist{
+	margin-left: 4rem;
+	font-family: sans-serif;
+	margin-right: -4rem;
+	font-size: 1.4rem;
+	margin-top: -1.5rem;
+	color: floralwhite;
+}
+#song-optionsbox{
+	display: none;
+	height: 6.5rem;
+	width: 15rem;
+	/*border: 2px solid black;*/
+	color: lightgray;
+	background-color: transparent;
+	font-family: sans-serif;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	margin-top: 1rem;
+}
+#song-optionsbox .options{
+	width: 13rem;
+	margin-top: -1rem;
+}
+#song-optionsbox i{
+	margin-right: 1rem;
+}
+.song:hover #song-optionsbox{
+    display: inline;
+    background-color: green;
+} 
+/* THEMED SONGS */
+/* THEMED SONGS - HEADING */
+#themedsongs-headings{
+	display: flex;
+}
+#themedsongs-headings h2{
+    margin-left: 7rem;
+    margin-top: 6rem;
+    font-family: serif;
+    color: floralwhite;
+    font-size: 3rem;
+    margin-right: -2rem;
+}
+/* THEMED SONGS - CONTENT */
+#themedsongs-content{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
+	margin-bottom: 4rem;
+}
+.themedsong{
+	max-height: 240px;
+	max-width: 320px;
+	margin-left: 4rem;
+	margin-top: 2rem;
+	text-decoration: none;
+}
+.themedsong img{
+	height: 100%;
+	width: 100%;
+	border: 5px ridge white;
+} 
+.themedsong a{
+	text-decoration: none;
+}
+.themed-text{
+	margin-top: -10rem;
+    margin-left: 7rem;
+	font-family: serif;
+	font-size: 2.5rem;
+	color: black;
+}
+.themed-text:hover{
+ transform: skew(20deg);
+ color: #f1002c;
+}
+.themedsong img:hover{
+    animation: changeShape 1.5s infinite ease-out normal;
+    /*transform: rotate(45deg);*/
+}
+
+@keyframes changeShape{
+    0%{
+    	border-radius: 20%;
+    }
+    50%{
+    	border-radius: 50%;
+    }
+    75%{
+    	border-radius: 80%;
+    }
+}
+/* FOOTER SECTION */
+/* BOTTOM PLAYER */
+#footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+}
+#bottom-player{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 15rem;
+	background-color:#424242;
+	padding-top: 2rem;
+	padding-left: 1rem;
+	margin-top: 25rem;
+}
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i #song-name{
+	margin-left: 15rem;
+	margin-top: -7rem;
+}
+#left #author-i #author{
+	margin-left: 15rem;
+	font-size: 1.8rem;
+}
+#left #left-i{
+    margin-left: 26rem;
+    margin-top: -8.3rem;
+}
+#left #left-i i{
+	margin-top:-1rem;
+	margin-left: 1rem;
+}
+#center #center-i {
+    margin-top: -0.5rem;
+    margin-left: 33rem;
+} 
+#center #center-i i{
+	margin-left: 3rem;
+	font-size: 1.9rem;
+}
+#center #center-range{
+    margin-left: 29rem;
+}
+#center #center-range input{
+	width: 38rem;
+    margin-top: 1rem;
+}
+#right{
+	margin-left: 65rem;
+	margin-top: -4.5rem;
+	font-size: 2rem;
+}
+#right i{
+	margin-left: 1rem;
+}
+#right #center-range{
+	margin-top: -2.5rem;
+}
+#right input{
+	margin-left: 10rem;
+	margin-top: -1rem;
+}
+
+
+
+					  <div id="clickbox" class="class-clickbox">
+			          	  <div class="display-flex">
+			 	          	<button><i class="fas fa-play"></i></button>
+			 		          <h4> Play Now </h4>
+			 	          </div>
+			 	          <div class="display-flex">
+			 		          <button><i class="fas fa-plus"></i></button>
+			 		          <h4> Add to favourites </h4>
+			 	          </div>
+			 	          <div class="display-flex">
+			 		          <button><i class="far fa-bookmark"></i></button>
+			 		          <h4> Add to queue </h4>
+			 	          </div>
+			 	          <div class="display-flex">
+			 		          <button><i class="fas fa-info-circle"></i></button>
+			 		          <h4> Get Information </h4>
+			 	          </div>
+			          </div>
+
+
+
+
+
+
+
+
+			          #navigation-search{
+	height: 4rem;
+	width: 29rem;
+	margin-top: 12rem;
+	display: ;
+}
+/* NAVIGATION - SEARCH TAG */
+#nav-search{
+	font-size: 1.8rem;
+}
+#nav-search i{
+	margin-top: 1.2rem;
+	margin-left: 1rem;
+}
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    font-size: 2rem;
+}
+/* MICROPHONE */
+#microphone i{
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    margin-left: -1rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	margin-top: 12.5rem;
+}
+#notifications #bell{
+	font-size: 3rem;
+	padding-left: 2rem;
+	margin-left: 3rem;
+}
+#notifications #circle{
+	left: 6.5rem;
+    font-size: 0.9rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+    margin-top: 12rem;
+    height: 75px;
+    width: 75px;
+    margin-left: 7rem;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+#navigation-search{
+	height: 4rem;
+	width: 29rem;
+	margin-top: 12rem;
+	display: none;
+}
+/* NAVIGATION - SEARCH TAG */
+#nav-search{
+	font-size: 1.8rem;
+}
+#nav-search i{
+	margin-top: 1.2rem;
+	margin-left: 1rem;
+}
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    font-size: 2rem;
+}
+/* MICROPHONE */
+#microphone i{
+    padding-right: 2rem;
+    padding-top: 1.2rem;
+    margin-left: -1rem;
+}
+
+
+
+
+
+body{
+	width: 100%;
+	margin: 0px;
+	background-color: #07071a;
+}
+/* HEADER - NAVIGATION */
+nav{
+	display: flex;
+}
+/* NAVIGATION - LOGO */
+#navigation-logo{
+    margin-left: 90px;
+    margin-top: 35px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+/* NAVIGATION - LOGO IMG */
+#navigation-logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 40%;
+	border: 25px double red;
+}
+/* NAVIGATION - LOGO P */
+#navigation-logo p{
+	position: absolute;
+	top: -2rem;
+	left: 15rem;
+	color: white;
+	font-family: cursive;
+	font-size: 2rem
+}
+/* NAVIGATION - LOGO I */
+#navigation-logo i{
+	font-size: 5rem;
+	color: #83f73b;
+	position: absolute;
+	top: 5rem;
+	left: 5rem;
+}
+.navigation-logo:hover i{
+	transform: scale(2.0);
+	color: pink !important;
+} 
+
+/* NAVIGATION - SEARCH  */
+#navigation-search{
+	display: flex;
+	position: relative;
+	margin-left: -2rem;
+}
+
+/* NAVIGATION - TEXT - I */
+#navigation-text-i{
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	height: 35%;
+	width: 25rem;
+	/*border: 2px solid white;*/
+	position: absolute;
+	top: 40px;
+	left: 550px;
+	background-color: #1c0d36;
+	border-radius: 0.9rem;
+}
+/* NAVIGATION - TEXT (FORM) */
+
+/* NAVIGATION - TEXT - INPUT */
+#navigation-text input{
+    color: lightgray;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    border: 0;
+    background-color: transparent;
+    padding-top: 0.3rem;
+    border-color: transparent;
+    margin-top: 5px;
+}
+/* NAVIGATION - ITAG */
+#navigation-itag{
+	font-size: 1.5rem;
+	color: lightgray;
+	position: relative;
+}
+#navigation-itag i{
+	position: absolute;
+    left: -2.5rem;
+    top: -1.6rem;
+    margin-left: 5px;
+}
+/* MICROPHONE */
+#microphone{
+	position: relative;
+}
+#microphone i{
+font-size: 1.8rem;
+    color: lightgray;
+    position: absolute;
+    top: -2rem;
+    left: 18.5rem;
+}
+/* NOTIFICATIONS */
+#notifications{
+	position: relative;
+}
+#notifications #bell{
+	color: lightgray;
+	font-size: 1.8rem;
+    position: absolute;
+    top: 3rem;
+    left: 62rem;
+}
+#notifications #circle{
+	position: absolute;
+	top: 3rem;
+	left: 63rem;
+    color: red;
+    font-size: 0.8rem;
+}
+/* NAVIGATION - SIGN IN */
+#navigation-sign-in{
+	height: 55px;
+	width: 55px;
+	position: relative;
+	background-color: transparent;
+}
+#navigation-sign-in img{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 67rem;
+	top: 2rem;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+/* NAVIGATION - HAMBURGER ICON */
+#hamburger-icon i{
+	display: none;
+}
+
+
+
+
+
+    #footer-section{
+	margin-top: 5rem;
+	color: floralwhite;
+    }
+    #bottom-player{
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 10rem;
+	background-color:#424242;
+	padding-top: 1rem;
+	padding-left: 1rem;
+	width: fit-content;
+    }
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i #song-name{
+	margin-left: 18rem;
+	margin-top: -7rem;
+	font-size: 2rem;
+}
+#left #author-i #author{
+	margin-left: 18rem;
+	font-size: 1.5rem;
+}
+#left #left-i{
+    margin-left: 26rem;
+    margin-top: -7rem;
+}
+#left #left-i i{
+	margin-top:-5rem;
+	margin-left: 1rem;
+	font-size: 1.3rem;
+}
+#center #center-i {
+    margin-top: -1rem;
+    margin-left: 33rem;
+    font-size: 2rem;
+} 
+#center #center-i i{
+	margin-left: 3rem;
+	font-size: 1.5rem;
+}
+#center #center-range{
+    margin-left: 29rem;
+}
+#center #center-range input{
+	width: 38rem;
+    margin-top: 1rem;
+}
+#right{
+	margin-left: 65rem;
+	margin-top: -4rem;
+}
+#right i{
+	margin-left: 1rem;
+	font-size: 1.3rem;
+}
+#right #center-range{
+	margin-top: -1rem;
+	margin-left: 0.5rem;
+	margin-right: 6rem;
+}
+#right input{
+	margin-left: 8rem;
+	margin-top: -1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#left .left-image{
+    height: 8rem;
+    width: 8rem;
+    margin-left: 8rem;
+    margin-top: 0.5rem;
+}
+#left .left-image img{
+	height: 100%;
+	width: 100%;
+}
+#left #author-i #song-name{
+	margin-left: 18rem;
+	margin-top: -7rem;
+	font-size: 2rem;
+}
+#left #author-i #author{
+	margin-left: 18rem;
+	font-size: 1.5rem;
+}
+#left #left-i{
+    margin-left: 26rem;
+    margin-top: -7rem;
+}
+#left #left-i i{
+	margin-top:-5rem;
+	margin-left: 1rem;
+	font-size: 1.3rem;
+}
+#center #center-i {
+    margin-top: -1rem;
+    margin-left: 33rem;
+    font-size: 2rem;
+} 
+#center #center-i i{
+	margin-left: 3rem;
+	font-size: 1.5rem;
+}
+#center #center-range{
+    margin-left: 29rem;
+}
+#center #center-range input{
+	width: 38rem;
+    margin-top: 1rem;
+}
+#right{
+	margin-left: 65rem;
+	margin-top: -4rem;
+}
+#right i{
+	margin-left: 1rem;
+	font-size: 1.3rem;
+}
+#right #center-range{
+	margin-top: -1rem;
+	margin-left: 0.5rem;
+	margin-right: 6rem;
+}
+#right input{
+	margin-left: 8rem;
+	margin-top: -1rem;
+}
+
+
+
+
+
+
+#similar-artist{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-family: serif;
+	height: 40rem;
+	/*border: 3px solid pink;*/
+	overflow-y: scroll;
+	/*height: 30rem;*/
+    width: 27.5rem;
+}
+/* SIMILAR ARTIST - HEADING */
+#similar-artist-heading{
+	display: flex;
+	width: 100%;
+	margin-bottom: 0.5rem;
+}
+#similar-artist-heading .artist-heading-h2{
+	margin-left: 2rem;
+	/*margin-right: 3rem;*/
+	font-size: 2rem;
+	width: 100%;
+}
+#similar-artist-heading .artist-heading-h4{
+	margin-left: 8rem;
+	font-size: 1.9rem;
+	margin-top: 0.5rem;
+}
+#similar-artist-heading a{
+	margin-left: 15rem;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+#similar-artist-heading a:hover{
+	color: white;
+}
+/* SIMILAR ARTIST - CONTENT */
+#similar-artist-content{
+	display: flex;
+	flex-direction: column;
+	/*flex-wrap: wrap;*/
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.similar-artist-block{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+	background-color: #0b1a20;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	padding-left: 2rem;
+}
+.similar-artist-block .image{
+    height: 110px;
+    width: 130px;
+    /*margin-left: -25rem;*/
+    /*margin-top: -8rem;*/
+}
+.similar-artist-block .image img{
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+}
+.songname-artist{
+	margin-left: 2rem;
+    /*margin-top: -10rem;*/
+}
+.i-time{
+	/*margin-top: -3rem;*/
+}
+.i-time i{
+	/*margin-top: -5rem;*/
+    margin-left: 2rem;
+}
+.similar-artist-block:hover{
+	color: lightgray;
+}
+.i-time i:hover{
+    color: blue;
+    justify-self: ;
+}
+
+
+for ( var prop in student ){
+
+}
+var keys = object.keys(student);
+
+
+
+
+
+

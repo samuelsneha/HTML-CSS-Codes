@@ -1,0 +1,25 @@
+h1{
+	text-transform: uppercase;
+	font-family: fantasy;
+	color: skyblue;
+}
+h2{
+	font-family: serif;
+	color: sienna;
+}
+.class1{
+	font-family: cursive;
+	color: sienna;
+}
+.class2{
+     font-family: cursive;
+     color: red;
+}
+.class3{
+	font-family:monospace;
+	color: powderblue;
+}
+.class4{
+	border-width: 15px;
+	border-style: dotted;
+}
