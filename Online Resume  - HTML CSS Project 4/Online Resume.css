@@ -1,0 +1,387 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #F1EFEF;
+}
+header{
+    height: 10rem;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+    margin-bottom: 4rem;
+}
+nav{
+    display: flex;
+}
+nav img{
+    margin: 0.5rem 0.5rem 0.5rem 8rem;
+    border-radius: 50%;
+}
+#headerContent h1{
+    font: bolder 45px sans-serif;
+    position: absolute;
+    left: 39rem;
+    top: 1rem;
+}
+#headerContent h3{
+    font: 21px sans-serif;
+    position: absolute;
+    left: 42rem;
+    top: 4.4rem;
+    padding: 0 0.8rem 0 0.8rem;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+#headerContent h3:hover{
+    /* background: linear-gradient( to right, #40E0D0, #FF8C00, #FF0080); */
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    transition: border-left border-right 2s;
+}
+#headerContent h1:hover{
+    /* transform: translateX(2em); */
+    background: linear-gradient( to right, #40E0D0, #FF8C00, #FF0080); 
+    transition: background 2s linear;
+}
+nav::before{
+    content: "";
+    background:#dce1ec !important;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+    z-index: -2;
+}
+ul{
+    display: flex;
+    position: relative;
+}
+.headersLi:hover{
+    border-bottom: 5px solid darkgray;
+    transition: border-bottom 15s ease-in;
+}
+ul #liFirst{
+    font: bold 20px sans-serif;
+    position: absolute;
+    top: 7rem;
+    left: 10rem;
+}
+#liFirst::before{
+    content: "\f08c";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 1.4rem;
+    left: -2rem;
+}
+ul #liSecond{
+    font: bold 20px sans-serif;
+    position: absolute;
+    top: 7rem;
+    left: 30rem;
+}
+#liSecond::before{
+    content: "\f09b";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 1.4rem;
+    left: -2rem;
+}
+ul #liThird{
+    font: bold 20px sans-serif;
+    position: absolute;
+    top: 7rem;
+    left: 49rem;
+    width: 5rem;
+}
+#liThird::before{
+    content: "\f0e0";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 1.4rem;
+    left: -2rem;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F1F1;
+    /* border: 2px solid blue; */
+}
+aside{
+    float: right;
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+.blockHeadings{
+    height: 2.5rem;
+    width: 30rem;
+    background-color: #D2E0FB;
+    font: bolder 23px sans-serif;
+    border-radius: 0px 40px 40px 0px;
+    margin: 1rem 0 1rem 0;
+    line-height: 2.5rem;
+    border-left: 0.5rem solid brown;
+}
+.blockHeadings:hover{
+    transform: scale(1.03);
+    /* background-color: linear-gradient( to right, #373B44, #4286f4); */
+}
+.blockSections{
+    margin: 1rem 0 0.5rem 0.5rem;
+}
+.dividerBox{
+    position: relative;
+    width: 100%;
+}
+.block{
+    margin: 0 0 0 3rem;
+}
+.eduContent::before{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+.divider{
+    height: 8rem;
+    border: 3.5px dashed brown;
+    position: absolute;
+    left: 1rem;
+    top: -0.3rem;
+}
+.expContent{
+    font:  13px serif;
+    margin: 0 0 0.8rem 0;
+}
+.content{
+    font: bold 17.5px serif;
+    margin: 0 0 0.8rem 0;
+    text-align:left;
+    cursor:pointer;
+}
+.content:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    color: rgb(39, 37, 37);
+}
+#exph3{
+    margin: 0 0 1rem 3rem;
+}
+/* briefcase */
+#exph3::before{ 
+    content: "\f0b1";
+    font-family: FontAwesome;
+    position: absolute;
+    color: black;
+    font-size: 1.5rem;
+    left: 38rem;
+}
+.expDivider{
+    height: 7rem;
+    top: -0.2rem;
+}
+.expContent::before{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+.pubDivider{
+    height: 9rem;
+    top: -0.2rem;
+}
+.pubContent::before{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+.proDivider{
+    height: 6rem;
+}
+.proContent::before{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+section{
+    width: 40%;
+    height: 100%;
+    border-right: 2px solid black;
+    padding: 0.2rem 0 0 2rem;
+}
+#skillsOuterBox{
+    padding-left: 2rem;
+    margin-bottom: 2.5rem;
+}
+.bar{ 
+	background-color: #353b48;
+	display: block;
+	height: 25px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 23px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+    width: 30rem;
+    margin-bottom: 0.8rem;
+}
+.bar span{ 
+	height: 22px;
+	float: left;
+    background-color: #D2E0FB;
+    border-radius: 23px;
+}
+.html{ /*set skills and animation of html*/
+	width: 80%;
+	animation: html 2s;
+}
+.css{ /*set skills and animation of html*/
+	width: 75%;
+	animation: css 2s;
+}
+.javascript{ /*set skills and animation of html*/
+	width: 85%;
+	animation: javascript 2s;
+}
+.jQuery{ /*set skills and animation of html*/
+	width: 80%;
+	animation: jQuery 2s;
+}
+.nodejs{ /*set skills and animation of html*/
+	width: 75%;
+	animation: nodejs 2s;
+}
+.mongodb{ /*set skills and animation of html*/
+	width: 70%;
+	animation: mongodb 2s;
+}
+.reactjs{ /*set skills and animation of html*/
+	width: 50%;
+	animation: reactjs 2s;
+}
+.git{ /*set skills and animation of html*/
+	width: 70%;
+	animation: git 2s;
+}
+.cpp{ /*set skills and animation of html*/
+	width: 80%;
+	animation: cpp 2s;
+}
+@keyframes html{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+@keyframes css{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+@keyframes javascript{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 85%;
+	}
+}
+@keyframes jQuery{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+@keyframes nodejs{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+@keyframes mongodb{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+@keyframes reactjs{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 50%;
+	}
+}
+@keyframes git{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}
+@keyframes cpp{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+.hobDivider{
+    height: 6rem;
+}
+.hobContent{
+    margin-left: 3rem;
+}
+.hobContent::before{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    color:black;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+footer{
+    height:3rem;
+    width: 100%;
+    border-top: 2px solid black;
+    margin: 1rem;
+}
+footer p{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+    font: 15px sans-serif;
+}
